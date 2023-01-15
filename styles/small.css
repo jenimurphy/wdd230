@@ -1,0 +1,67 @@
+<style> @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=News+Cycle&family=Satisfy&display=swap'); </style>
+
+/* These are the fonts for my Assignment Portal
+font-family: 'Merienda', cursive;
+font-family: 'News Cycle', sans-serif;
+font-family: 'Satisfy', cursive;
+*/
+
+body {
+  font-size: 48px;
+  font-family: 'Merienda', cursive;
+  background-color: rgb(211, 217, 221);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+header {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}
+.content {
+  max-width: 600px;
+  margin: auto;
+}
+.imgBox {
+  background: rgb(203, 170, 192);
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 25px;
+  color: navy;
+}
+
+h2 {
+  text-align: left;
+  font-size: 1rem;
+  text-shadow: 0 0 2px whitesmoke; 
+}
+
+ul {
+  text-align: left;
+  list-style: inside;
+  font-size: 1rem;
+}
+
+footer {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  background-color: rgb(178, 182, 185);
+  color: navy;
+  padding: 15px;
+}
+
+
