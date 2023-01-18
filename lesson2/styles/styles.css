@@ -16,9 +16,9 @@ header, footer {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr;
-    /*column-gap: 10px;*/
+    display: block;
+    /*grid-template-columns: 1fr;
+    column-gap: 10px;*/
     row-gap: 10px;
     margin: 0.75rem;
 }
