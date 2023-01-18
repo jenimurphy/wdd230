@@ -18,7 +18,7 @@ header, footer {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    column-gap: 10px;
+    /*column-gap: 10px;*/
     row-gap: 10px;
     margin: 0.75rem;
 }
@@ -67,18 +67,6 @@ footer {
     text-align: center;
     font-family: 'sans-serif';
 }
-
-/* CLASS RULES */
-
-/*.designbox3  {
-    margin-right: auto;
-    margin-left: auto;
-    padding: 1rem 0;
-    background-color: lightcyan;
-    border-radius: 10px;
-    border: 5px double pink;  
-}*/
-
 
 .myname {
     color: white;
