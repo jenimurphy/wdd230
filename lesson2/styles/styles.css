@@ -1,8 +1,8 @@
 
 body {
     font-family: 'Bitter', sans-serif;
-    min-height: 100vh;
     background-color: lightgray;
+    width: auto;
 }
 
 header, footer {
@@ -16,9 +16,10 @@ header, footer {
 }
 
 main {
-    display: block;
-    /*grid-template-columns: 1fr;
-    column-gap: 10px;*/
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    /*column-gap: 10px;*/
     row-gap: 10px;
     margin: 0.75rem;
 }
@@ -39,7 +40,7 @@ section, img {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.62rem;
     font-family: Bitter;
     font-weight: 600;
     padding: 10px;
@@ -54,6 +55,7 @@ h2 {
 
 p {
     color: darkslategray;
+    font-size: 1rem;
     font-weight: 600;
 }
 
