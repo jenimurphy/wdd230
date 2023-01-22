@@ -51,7 +51,7 @@ a {
     
 }
 
-img {
+img, .websitephoto {
     align-items: center;
     border-radius: 10px;
     margin: 10px;
@@ -59,7 +59,7 @@ img {
 }
 
 .logo {
-    max-width: 15%;
+    width: 75px;
     border-radius: 20px;
 }
 
