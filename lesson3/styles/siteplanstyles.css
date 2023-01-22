@@ -38,6 +38,7 @@ nav {
     background-color: #8DA9C4; 
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     margin: auto;
     width: 98%;
