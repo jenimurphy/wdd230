@@ -1,4 +1,4 @@
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 505px) {
     .heroicon {
         display: inline-block;
         border-radius: 15%;
@@ -47,38 +47,87 @@
         font-family: 'Quattrocento', serif;
     }
 
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 5px;
+        column-gap: 5px;
+        margin: 5px;
+    }
+
+    main div{
+        background-color: lightgray; 
+    }
+    #join {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    #directory {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    #events {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    #weather {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+   
+    #spotlight{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    #spotlight div{
+        padding: 5px;
+    }
+    
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 30px;
+        row-gap: 5px;
         justify-content: center;
         text-align: center;
         }
 
         footer .icon {
-            grid-column: 1;
+            grid-column: 2/3;
             justify-content: center;
             align-items: center;
         }
       
-        .chamberinfo #coctitle {
-            margin: auto;
-            grid-column: 1/2;
+        .chamberinfo {
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+
+        #choctitle {
             font-family: 'Parisienne';
             font-size: larger;
         }
+        .chamberinfo {
+            grid-column: 1/3;
+        }
         .websiteinfo {
-            grid-column: 2/3;
+            grid-column: 1/4;
+            grid-row: 2;
             justify-content: center;
         }
         
+        .footericons {
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+
         .footericons .icon{
             display: inline-block;
             width: 45px;
             justify-content: center;
-        
         }
-        
-
-    
-
 }

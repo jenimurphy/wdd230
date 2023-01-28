@@ -1,1 +1,41 @@
-@media only screen and (min-width: 64rem) {}
+@media only screen and (min-width: 769px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 5px;
+        column-gap: 5px;
+        margin: 5px;
+    }
+
+    main div{
+        background-color: lightgray; 
+    }
+  
+    #directory {
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+
+    #events {
+        grid-column: 1/4;
+        grid-column: 1/2;
+    }
+    #weather {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #join {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    #spotlight{
+        grid-column: 3/4;
+        grid-row: 1/4;
+    }
+
+    #spotlight div{
+        padding: 5px;
+    }
+}
