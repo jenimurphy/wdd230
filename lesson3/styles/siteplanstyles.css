@@ -3,7 +3,10 @@ body {
     background-color: #134074;
     font-family: 'Parisienne', cursive;
     font-family: 'Quattrocento', serif;
+    min-height: 100vh;
     width: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 header, footer {
@@ -11,13 +14,14 @@ header, footer {
     background-color: #EEF4ED;
     border-radius: 10px;
     color: #134074;
-    flex: auto;
+    /*flex: auto;*/
     justify-content: center;
     margin: 10px;
     padding: 10px;
 }
 
 main {
+    display: block;
     margin: 0.75rem;
     width: auto;
 }
@@ -35,18 +39,18 @@ section  {
 
 nav {
     align-items: center;
-    background-color: #8DA9C4; 
+    background-color: #EEF0F0; 
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    font-weight: bold;
+    font-weight: bolder;
     justify-content: space-evenly;
-    margin: auto;
+    margin: 5px;
     width: 98%;
 }
 
 a {
-    color: white;
+    color: #13315C;
     font-size: 1.25rem;
     text-decoration: none;
     
@@ -59,9 +63,14 @@ img, .websitephoto {
     width: 98%;
 }
 
+.personaimage {
+    width: 50%;
+}
+
 .logo {
     width: 75px;
     border-radius: 20px;
+    float: left;
 }
 
 h1 {
@@ -75,26 +84,32 @@ h1 {
 }
 
 h2 {
-    color: #8DA9C4;
+    color: #13315C;
     font-size: 2rem;
     font-weight: bolder;
     margin: 5px 0;
 }
 h3 {
     color: white;
-    font-size: 1.2rem;
-    margin: 10px;
+    font-size: 1.75rem;
+    font-weight: bolder;
+    margin: 5px 0;
 }
-
 p {
     color: white;
     font-family: 'Quattrocento';
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     margin: 10px;
 }
+ul {
+    color: white;
+}
 
 footer {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
     font-family: 'sans-serif';
     text-align: center;
 }

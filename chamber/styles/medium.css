@@ -1,0 +1,84 @@
+@media only screen and (min-width: 35rem) {
+    .heroicon {
+        display: inline-block;
+        border-radius: 15%;
+        width: 95px;
+        text-align: center;
+        margin: auto;
+    }
+           
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+    .hero-image .button {
+        position: absolute;
+        background-color: #c0d5e8;
+        border-radius: 12px;
+        border: 2px solid #13315C;
+        font-size: 16px;
+        font-weight: 600px;
+        opacity: 65%;
+        height: 45px;
+        width: 105px;
+        bottom: 10%;
+        right: 5%;
+        cursor: pointer;
+        }
+    
+    .button:hover {opacity: 95%}
+
+    h1 {
+        font-family: 'Parisienne';
+        font-size: 5rem;
+        margin: 10px;
+    }
+    
+    h2 {
+        font-family: 'Quattrocento', serif;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        text-align: center;
+        }
+
+        footer .icon {
+            grid-column: 1;
+            justify-content: center;
+            align-items: center;
+        }
+      
+        .chamberinfo #coctitle {
+            margin: auto;
+            grid-column: 1/2;
+            font-family: 'Parisienne';
+            font-size: larger;
+        }
+        .websiteinfo {
+            grid-column: 2/3;
+            justify-content: center;
+        }
+        
+        .footericons .icon{
+            display: inline-block;
+            width: 45px;
+            justify-content: center;
+        
+        }
+        
+
+    
+
+}
