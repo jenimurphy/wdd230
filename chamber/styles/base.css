@@ -85,6 +85,11 @@ header, footer {
     justify-content: center;
     color:#063f8f;
 }
+.grid {
+    display: flex;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+}
 
 
 h1 {

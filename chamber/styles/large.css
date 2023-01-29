@@ -1,6 +1,9 @@
 @media only screen and (min-width: 769px) {
     main {
         display: grid;
+    }
+    .grid{
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         row-gap: 5px;
@@ -13,13 +16,13 @@
     }
   
     #directory {
-        grid-column: 2/3;
-        grid-row: 1/4;
+        grid-column: 1/2;
+        grid-row: 1/2;
     }
 
     #events {
-        grid-column: 1/4;
         grid-column: 1/2;
+        grid-rpw 2/3;
     }
     #weather {
         grid-column: 1/2;
