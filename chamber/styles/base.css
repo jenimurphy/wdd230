@@ -1,8 +1,9 @@
 
 body {
-   /* display: flex;
-    flex-direction: column; */
-    margin: auto;
+   display: flex;
+    flex-direction: column;
+    max-width: 1080px; 
+    margin: 25px 25px ; 
     min-height: 100vh;  
     background: #134074;
   }
@@ -39,8 +40,8 @@ header, footer {
 }
 .heroicon {
     padding: 15px;
-    border-radius: 15%;
-    width: 60px;
+    max-width: 65px;
+    max-height: 65px;
  
 }
 .maintitle {
