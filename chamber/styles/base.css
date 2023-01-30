@@ -1,15 +1,16 @@
 
 body {
-    width: auto;
-    display: flex;
-    flex-direction: column;
+   /* display: flex;
+    flex-direction: column; */
+    margin: auto;
+    min-height: 100vh;  
     background: #134074;
-    margin: 15px;
-    }
+  }
 
-.icon {
-    border-radius: 15px;
-    width: 74px
+.hero-content {
+    display: flex;
+    text-align: left; 
+    color: #13315C;
 }
 
 .socialicon {
@@ -19,50 +20,33 @@ body {
 
 .social {
     display: flex;
-    float: right;
-    text-align: right;
-    padding: 5px;
+    
 }
 
 header, footer {
     background-color: #EEF4ED;
-    width: 97%;
+    width: 98%;
     align-items: center;
 }
 
-.hero {
-    color: white;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-}
 .hero-image {
     position: relative;
 }
 
 .hero-image img {
-    margin: 10px;
-    border-radius: 15px;
-    width: 97%;
-    justify-content: center;
+    width: 98%;
+
 }
 .heroicon {
+    padding: 15px;
     border-radius: 15%;
-    width: 85px;
+    width: 60px;
+ 
 }
 .maintitle {
     display: inline-block;
-}
-
-.hero-content {
-    text-align: left; 
-    color: #13315C;
-}
-
-.socialicon  {
-    display: flex;
-    flex-direction: row;
-}
+    font-size: 3em;
+    }
 
 .hero-image .button {
     position: absolute;
@@ -80,35 +64,49 @@ header, footer {
 
 .button:hover {opacity: 95%}
 
+.hero-image .hero-quote {
+    font-family: 'Parisienne';
+    font-size: 1rem;
+    color: whitesmoke;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    }
+
 .headerdate {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     color:#063f8f;
 }
+
 .grid {
     display: flex;
-    grid-template-columns: 1fr;
     flex-direction: column;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
 }
 
 
 h1 {
     font-family: 'Parisienne';
     font-size: 3rem;
-    margin: 8px;
 }
 
 h2 {
     font-family: 'Quattrocento', serif;
-    font-size: 2.5rem;
+    font-size: 1.75rem;
+    text-align: center;
 }
 
 p {
     color: black;
 }
+
 .mainsubtitle {
     font-size: 3.75rem;
     margin: auto;
+    text-align: center;
 }
 
 q {
@@ -146,7 +144,7 @@ q {
 }
  #menu::before {
 	content: "≡";
-	 font-size: 2.25rem;
+	font-size: 2.25rem;
 }
  .navigation a:hover, navigation a:active {
 	color: white;
@@ -159,7 +157,7 @@ q {
 }
 
 .responsive #menu::before {
-	content: "X";
+	content: "x";
     text-align: right;
 }
 
@@ -167,30 +165,22 @@ ul li {
     list-style-type: none;
  }
 
- main {
-    width: 97%;
+main {
+    width: 98%;
     display: flex;
     flex-direction: column;
     text-align: center;
     color: black;
-    background: lightgray;
     
  }
 
-/* .content {
-    display: block;
-    text-align: center;
-    color: white;
-    margin-top: 10px;
-    } */
-
-/* .contentbox {
-    text-align: center;
-    color: white;
-    margin-bottom: 10px;
-    height: 150px;
-    background-color: lightgray;   
-}*/
+.grid-card-background {
+    height: 50px;
+    background-color: lightgrey;
+}
+.gridPTImg {
+    display: none;
+   }
 
 footer {
     margin-top: 5px;
@@ -209,12 +199,11 @@ footer {
 
 .chamberinfo #coctitle {
     margin: auto;
-    /*grid-column: 1/2; */
     font-family: 'Parisienne';
     font-size: larger;
 }
+
 .websiteinfo {
-    /*grid-column: 2/3; */
     justify-content: center;
 }
 
