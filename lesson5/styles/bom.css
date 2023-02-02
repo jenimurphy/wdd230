@@ -1,0 +1,69 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 25px ;
+    background-color: blanchedalmond;
+}
+
+.container, body{
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    border: 10px;
+    text-align: center;
+    color: darkblue;
+}
+
+h2 {
+    font-size: smaller;
+    text-align: center;
+    color: darkblue;
+}
+
+.chapterbox{
+    width: 425px;
+    height: auto;
+    padding: 15px;
+    border: 2px solid darkblue;
+    background: lightgrey;
+}
+
+button {
+    padding: 0.5rem;
+    background-color: lightgoldenrodyellow;
+    color: darkblue;
+}
+#item {
+    padding: 0.5rem;
+}
+
+.input {
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+li{
+    margin-bottom: 10px;
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li button {
+    margin-right: 50px;
+    font-size: 12px;
+    padding: 0.5rem;
+    color: #666;
+}
+
+ul {
+    list-style: none;
+}
+
