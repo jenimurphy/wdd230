@@ -8,7 +8,7 @@ body {
     background-color: blanchedalmond;
 }
 
-.container, body{
+.container {
     max-width: 800px;
     margin: auto;
 }
