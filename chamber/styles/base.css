@@ -1,9 +1,8 @@
 
 body {
-   display: flex;
+    display: flex;
     flex-direction: column;
-    max-width: 1080px; 
-    margin: 25px 25px ; 
+    margin: 15px 15px; 
     min-height: 100vh;  
     background: #134074;
   }
