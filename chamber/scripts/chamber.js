@@ -12,3 +12,13 @@ todaysdate.innerHTML = `${fulldateUK}`;
 const mainnav = document.querySelector('.navigation')
 const hamburgerbutton = document.querySelector('#menu');
 hamburgerbutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+
+let day = d.getDay();
+document.getElementById('banner').innerHTML = day;
+
+if (day == 1 || day === 2) {
+document.getElementById('banner').innerHTML = "Come join us for the chamber meet and greet Wednesday at 7:00 p.m";
+}
+else {
+  document.getElementById('banner').style.visibility = "hidden";
+}

@@ -1,129 +1,76 @@
 
 body {
-    display: flex;
-    flex-direction: column;
     margin: 15px 15px; 
-    min-height: 100vh;  
+    height: 100%;  
     background: #134074;
-  }
+    box-sizing: border-box;
+}
+#banner {
+    display: block;
+    text-align: center;
+    color: white;
+    font-family: 'Quattrocento';
+    font-size: larger;
+}
+
+/*--------------HEADER------------------*/
 
 .hero-content {
     display: flex;
     text-align: left; 
     color: #13315C;
 }
-
-.socialicon {
-    width: 35px;
-    margin-right: 5px;
-}
-
-.social {
-    display: flex;
-    
-}
-
-header, footer {
-    background-color: #EEF4ED;
-    width: 98%;
-    align-items: center;
-}
-
-.hero-image {
-    position: relative;
-}
-
-.hero-image img {
-    width: 98%;
-
-}
 .heroicon {
     padding: 15px;
     max-width: 65px;
     max-height: 65px;
- 
 }
 .maintitle {
     display: inline-block;
     font-size: 3em;
     }
 
-.hero-image .button {
-    position: absolute;
-    background-color: #c0d5e8;
-    border-radius: 12px;
-    border: 2px solid #13315C;
-    font-size: 16px;
-    opacity: 65%;
-    height: 25px;
-    width: 75px;
-    bottom: 15%;
-    right: 5%;
-    cursor: pointer;
+.mainsubtitle {
+    font-size: 3.75rem;
+    margin: auto;
+    text-align: center;
     }
+    
+.socialicon {
+    width: 35px;
+    margin-right: 5px;
+}
 
-.button:hover {opacity: 95%}
-
-.hero-image .hero-quote {
-    font-family: 'Parisienne';
-    font-size: 1rem;
-    color: whitesmoke;
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    }
-
+.socialheader {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+}
 .headerdate {
     display: flex;
     justify-content: space-around;
     align-items: center;
     color:#063f8f;
+    }
+
+header, footer {
+    background-color: #EEF4ED;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
-
-.grid {
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: 1fr;
-    row-gap: 10px;
-}
-
-
-h1 {
-    font-family: 'Parisienne';
-    font-size: 3rem;
-}
-
-h2 {
-    font-family: 'Quattrocento', serif;
-    font-size: 1.75rem;
-    text-align: center;
-}
-
-p {
-    color: black;
-}
-
-.mainsubtitle {
-    font-size: 3.75rem;
-    margin: auto;
-    text-align: center;
-}
-
-q {
-    color: #13315C;
-    font-size: larger;
- }
-
- nav {
+/*--------------NAVIGATION------------------*/
+nav {
     margin: 10px auto;
     background-color: lightgrey;
     color: black;
 }
 
- .navigation {
+ .navigation nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     list-style: none;
-    margin: 0;
-    padding: 0;
     color: black;
 }
  .navigation li:first-child {
@@ -135,17 +82,17 @@ q {
 
 .navigation a {
 	display: block;
-	padding: 0.75rem;
+	padding: 0.7rem;
 	text-align: center;
 	text-decoration: none;
     color: black;
-/*	font-weight: 700;*/
 	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
+	font-size: 1.15em;
 }
  #menu::before {
 	content: "≡";
 	font-size: 2.25rem;
+    z-index: -1;
 }
  .navigation a:hover, navigation a:active {
 	color: white;
@@ -159,32 +106,115 @@ q {
 
 .responsive #menu::before {
 	content: "x";
-    text-align: right;
+    text-align: left;
+    z-index: -1;
+}
+
+ul {
+    padding: 0;
 }
 
 ul li {
     list-style-type: none;
- }
+}
 
+/*--------------MAIN------------------*/
 main {
-    width: 98%;
     display: flex;
     flex-direction: column;
     text-align: center;
-    color: black;
+    color: black;   
+}
+.heroimage {
+    position: relative;
+    }
+
+.heroimage .button {
+    position: absolute;
+    background-color: #c0d5e8;
+    border-radius: 12px;
+    border: 2px solid #13315C;
+    font-size: 16px;
+    opacity: 65%;
+    height: 25px;
+    width: 75px;
+    bottom: 15%;
+    right: 5%;
+    cursor: pointer;
+    }
     
+.button:hover {opacity: 95%}
+
+q {
+    color: #13315C;
+    font-size: larger;
  }
 
 .grid-card-background {
-    height: 150px;
     background-color: lightgrey;
-}
-.gridPTImg {
-    display: none;
-   }
+    margin: 5px;
+    padding: 5px;
+}   
+.heroimage .heroquote {
+    font-family: 'Parisienne';
+    font-size: 1rem;
+    color:#13315C;
+    /*color: whitesmoke; ---Only for week6*/
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    }
 
+h1 {
+    font-family: 'Parisienne';
+    font-size: 3rem;
+    }
+
+h2 {
+    font-family: 'Quattrocento', serif;
+    font-size: 1.75rem;
+    text-align: center;
+    }
+
+h3 {
+    color:#13315C;
+    font-size: 1.75em;
+    }
+
+p {
+    color: black;
+    font-family: 'Quattrocento';
+    font-size: 3.2em;
+    text-align: left;
+    }
+
+.p-title {
+    font-family: 'Parisienne';
+    font-size: 1.75em;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    }
+
+.p-content {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.join .button {
+    background-color: #c0d5e8;
+    border-radius: 12px;
+    border: 2px solid #13315C;
+    font-size: 16px;
+    height: 55px;
+    width: 175px;
+    cursor: pointer;
+    }
+
+/*--------------FOOTER------------------*/
 footer {
     margin-top: 5px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,14 +224,16 @@ footer {
 .chamberinfo .websiteinfo {
     margin-top: auto;
     margin-bottom: auto;
+    padding: 5px;
     width: 97%;
     background: #EEF4ED;
     }
 
 .chamberinfo #coctitle {
     margin: auto;
+    padding: 5px;
     font-family: 'Parisienne';
-    font-size: larger;
+    font-size: 1.75em;
 }
 
 .websiteinfo {
@@ -212,6 +244,5 @@ footer {
     display: inline-block;
     width: 45px;
     justify-content: center;
-
 }
 
