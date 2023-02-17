@@ -5,18 +5,6 @@ body {
     text-align: center;
 }
 
-.lazyloadimg {
-    opacity: 1;
-    transition: 150ms;
-}
-
-/*
-.lazyloadimg.show {
-    transform: translatex(0);
-    opacity: 1;
-}
-*/
-
 h1 {
     text-align: center;
 }
