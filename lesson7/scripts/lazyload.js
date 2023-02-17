@@ -1,5 +1,4 @@
 const imagesToLoad = document.querySelectorAll("img[data-src]");
-console.log(imagesToLoad);
 const imgOptions = {
     threshold: .5,
     rootMargin: "0px 0px 50px 0px"
