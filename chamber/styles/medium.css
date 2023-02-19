@@ -1,88 +1,70 @@
-@media only screen and (min-width: 505px) {
+@media only screen and (min-width: 800px) {
   
+    /**************-HEADER-**************/
     .heroicon {
         display: inline-block;
     }
     .maintitle {
         font-size: 3.5em;
     } 
-    
-
-    h1 {
-        font-size: 4.75rem;
-        margin: 10px;
-    }
-    
-    h2 {
-        font-size: 2rem;
-        text-align: left;
+    .headerdate {
+        font-size: 1.25rem;
     }
 
-    h3 {
-        font-size: 2.2em;
+     /**************-MAIN-**************/
+  
+     .button {
+        bottom: -35%;
+        right: 15%;
+        height: 45px;
+        width: 105px;
     }
-    
-    .grid-wrapper {
+
+    .main-wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        row-gap: 5px;
-        column-gap: 5px;
+        grid-template-rows: auto;
+        grid-gap: 5px;
+        justify-content: flex-start;
+        align-content: center;
     }
-    .p-content {
-        font-size: 1.1em;
-    }
- 
-    .p-title {
-        font-size: 2.2em;
-        padding: 5px;
-    }
-    
-    #heroimage {
+    .news {
+        grid-row: 1/2;
         grid-column: 1/5;
-        grid-row: 1/3;
     }
 
-    .heroimage .hero-quote {
-        font-size: 1.5rem;
-    }
-    .news{
-        grid-column: 1/5;
-        grid-row: 3/4;
-    }
-      
     .spotlight1 {
+        grid-row: 2/3;
         grid-column: 1/3;
-        grid-row: 4/5;
-        border-radius: 1%;
     }
-    
+
     .spotlight2 {
+        grid-row: 2/3;
         grid-column: 3/5;
-        grid-row: 4/5;
-        border-radius: 1%;
     }
 
     .spotlight3 {
         display: none;
     }
-  
+
     .join {
+        grid-row: 3/4;
         grid-column: 1/5;
-        grid-row: 5/6;
     }
     .events {
+        grid-row: 4/5;
         grid-column: 1/4;
-        grid-row: 6/7;
-    }   
+    }
     .weather {
+        grid-row: 4/5;
         grid-column: 4/5;
-        grid-row: 6/7;
     }
 
+
+    /**************-FOOTER-/**************/
     footer {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
     }
     
@@ -101,16 +83,11 @@
         grid-column: span 3;
         justify-content: center;           
     }
-        
-    .footericons {
-        grid-column: 3/4;
-        grid-row: 1/2;
-    }
-        
+  
     .socialicon {
         display: inline-block;
         padding: 10px;
-        width: 45px;
+        width: 75px;
         justify-content: center;
     }
             

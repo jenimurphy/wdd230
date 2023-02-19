@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Port Townsend Chamber of Commerce. Connecting the the community and the businesses that make PT a great place to live!">
     <title>Port Townsend Chamber of Commerce</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -16,10 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="content">
-        <div id="banner">
+    <div id="banner">
             Come join us for the chamber meet and greet Wednesday at 7:00 p.m
-        </div>
+    </div>
     <header>
         <div class="hero-content"> 
             <img class="heroicon" src="images/PTLogo2.webp" alt="PT Icon">            
@@ -40,96 +39,122 @@
             <ul class="navigation">
                 <li><a id="menu" href="#"></a></li>
                 <li><a href="#">HOME</a></li>
+                <li><a href="wdd230/chamber/discover.html">DISCOVER</a></li>
                 <li><a href="#">DIRECTORY</a></li>
                 <li><a href="#">EVENTS</a></li>
                 <li><a href="#">JOIN</a></li>
             </ul>
         </nav>
 <main>
-    <div class = "grid-wrapper">
-         <div id="heroimage">
-        
-            <picture>
-                <source media = "(min-width: 505px)" srcset = "images/wdd230_800.jpg">
-                <source media = "(min-width: 800px)" srcset = "images/wdd230_500.jpg">
-                
-                <img src = "images/wdd230_500.jpg" alt = "3 People talking">
-            </picture>
-        
-            <button class="button">JOIN</button>
-            <q class="heroquote">A great place to visit, even better to come and stay!</q> 
+    <div id="heroimage">
+        <picture>
+            <source srcset="images/wdd230_500.jpg" media="(min-width: 501px) and (max-width: 799px)">
+            <source srcset="images/wdd230_800.jpg" media="(min-width: 800px) and (max-width: 1023px)">
+            <source srcset="images/wdd230_1024.jpg" media="(min-width: 1024px)">            
+            <img src = "images/wdd230_350.jpg" alt = "3 People talking">
+        </picture>
+    </div>
+        <!--Put this back and fix its position once the large file works
+        <button class="button">JOIN</button>
+        <q class="heroquote">A great place to visit, even better to come and stay!</q> 
+        -->
+    <div class = "main-wrapper"> 
+        <div id="heroimage-grid">
+           
+                <img src = "images/wdd230_800.jpg" alt = "3 People talking">
+            
         </div>
         <div class="events grid-card-background">
-            <p class='p-title'>Events</p>
+            <div class='card-title'>Events</div>
             <h3>Chamber Cafe - Annual State of the County</h3>
             <p class="p-content">Date: February 3, 2023
             Time: 10:00 AM - 11:15 AM PST</p>
+            <br>
         </div>
         <div class="weather grid-card-background">
-            <p class='p-title'>Weather</p>
+            <div class='card-title'>Weather</div>
             <p class="p-content">
-                Temperature:  <span id="temp">56</span>℉ <br>
-                Wind Speed: <span id="windspeed">38</span><br>  
+                Temperature:  <span id="temp">26</span>℉ <br>
+                Wind Speed: <span id="windspeed">38</span>mp/h<br>  
                 Wind Chill:  <span id="windchill"></span><br>
             </p>
+            <br>
         </div>
         <div class="news grid-card-background">
-            <p class='p-title'>News Release</p>
-            <p class="p-content">The Chamber is excited to announce that nominations are now open for the 2023 Jefferson County Community Leadership Awards.</p>
-            <p class="p-content">The Awards Ceremony will be held at the American Legion, March 25, 2023.</p>
+            <div class='card-title'>News Release</div>
+                <p class="p-content">The Chamber is excited to announce that nominations are now open for the 2023 Jefferson County Community Leadership Awards.</p>
+                <p class="p-content">The Awards Ceremony will be held at the American Legion, March 25, 2023.</p>
+                <br>
         </div>
         <div class="join grid-card-background">
-            <p class='p-title'>Join</p>
-            <p class="p-content">We have multiple levels of Membership investment. We would welcome the opportunity to discuss them with you and to determine the best way for you to achieve your goals with the Chamber.</p>
-            <button class="button">JOIN</button>
+            <div class='card-title'>Join</div>
+                <p class="p-content">We have multiple levels of Membership investment. We would welcome the opportunity to discuss them with you and to determine the best way for you to achieve your goals with the Chamber.</p>
+                <p class="p-content">
+                <button class="grid-button">JOIN</button>
+                <br>
+                </p>
+                <br>
         </div>
-        
-        <div class="spotlight1 grid-card-background">
-            <p class='p-title'>Bed & Breakfast</p>
-            <h3>Amber Lights Bed and Breakfast</h3>
-            <span class="p-content">4042 Hastings Ave. W</span><br>
-            <span class="p-content">Port Townsend, WA 98368</span><br>
-            <span class="p-content">360.390.5712</span><br>
-        <span><a href="http://www.amberlightsbedandbreakfast.com">amberlightbedandbreakfast.com</a></span>
-        </div>
-        <div class="spotlight2 grid-card-background">
-            <p class='p-title'>Arts</p>
-            <h3>Port Townsend Film Festival</h3>
-            <span class="p-content">211 Taylor St. Ste. 401A</span><br>
-            <span class="p-content">Port Townsend, WA 98368</span><br>
-            <span class="p-content">360.379.1333</span><br>
-        <span><a href="http://www.ptfilmfest.com">ptfilmfest.com</a></span>
-        </div>
-        <div class="spotlight3 grid-card-background">
-            <p class ='p-title'>Food</p>
-            <h3>Elevated Ice Cream Co. & Candy Shop</h3>
-            <span class="p-content">627 Water St.</span><br>
-            <span class="p-content">Port Townsend, WA 98368</span><br>
-            <span class="p-content">360.385.1156</span><br>
-            <span><a href="http://www.elevatedicecream.com">elevatedicecream.com</a></span>
-        </div>
+        <div class ="spotlight1 grid-card-background">
+                <div class='card-title'>Bed & Breakfast</div>
+                <h3>Amber Lights Bed and Breakfast</h3>
+                <p class="p-content">4042 Hastings Ave. W</p>
+                <p class="p-content">Port Townsend, WA 98368</p>
+                <p class="p-content">360.390.5712</p><br>
+                <p class="p-content">
+                <a href="http://www.amberlightsbedandbreakfast.com">amberlightbedandbreakfast.com</a>
+                </p>
+                <br>
+                <br>
+            </div>
+         
+            <div class ="spotlight2 grid-card-background">
+                <div class='card-title'>Arts</div>
+                <h3>Port Townsend Film Festival</h3>
+                <p class="p-content">211 Taylor St. Ste. 401A</p>
+                <p class="p-content">Port Townsend, WA 98368</p>
+                <p class="p-content">360.379.1333</p><br>
+                <p class="p-content">
+                <a href="http://www.ptfilmfest.com">ptfilmfest.com</a>
+                </p>
+                <br>
+                <br>
+            </div>
+         
+            <div class ="spotlight3 grid-card-background">
+                <div class ='card-title'>Food</div>
+                <h3>Elevated Ice Cream Co. & Candy Shop</h3>
+                <p class="p-content">627 Water St.</p>
+                <p class="p-content">Port Townsend, WA 98368</p>
+                <p class="p-content">360.385.1156</p><br>
+                <p class="p-content">
+                <a href="http://www.elevatedicecream.com">elevatedicecream.com</a>
+                </p>
+                <br>
+                <br>
+            </div>
     </div>
 </main>
 
 <footer>
     <div class="chamberinfo">
         <div id="coctitle">Port Townsend Chamber of Commerce</div>
-        <span>2409 Jefferson St B</span>
-        <br><span>Port Townsend, WA 98368</span>
-        <br><span>360-555-1212</span>
-        <br><span>📍<a href="https://goo.gl/maps/dWaTq9HRs2X9Qai26"> LOCATION MAP</a></span>
-        </div>
-    <div class="footericons" >
-        <img class="socialicon" src="images/PTLogo2.jpg" alt="PTIcon">
+            <span>2409 Jefferson St B</span>
+            <br><span>Port Townsend, WA 98368</span>
+            <br><span>360-555-1212</span>
+            <br><span>📍<a href="https://goo.gl/maps/dWaTq9HRs2X9Qai26"> LOCATION MAP</a></span>
+         </div>
+    <div class="footericons">
+        <img class="socialicon" src="images/PTLogo2.webp" alt="PTIcon">
         <img class="socialicon" src="images/facebook.png" alt="Facebook icon">
         <img class="socialicon" src="images/Instagram.png" alt="Instagram icon">
     </div>
 <br>
     <div class="websiteinfo">
-        ©<span id="copyright"></span> - Jeniffer Murphy - WDD 230 - <span id="lastupdate"></span>
+     ©<span id="copyright"></span> - Jeniffer Murphy - WDD 230 - <span id="lastupdate"></span>
+    <br>
     </div>
 </footer>
-</div>
 <script src="scripts/chamber.js"></script>
 <script src="scripts/weather.js"></script>
 </body>
