@@ -89,7 +89,7 @@
 /*--------------DISCOVER------------------*/
     .discover-main {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;  
     }
 
@@ -99,6 +99,7 @@
 
     .discoverImages {
         grid-column: 2/3;
+        grid-row: 1/2;
     }
 
     .ptdemographics {
