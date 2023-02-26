@@ -36,16 +36,16 @@
     .p-content {
         font-size: 1.75em;
     }
-
-    .main-wrapper {
-        grid-auto-columns: 1fr auto 1fr;
-
-    }
-    
-    #heroimage {
+    .button {
         display: none;
     }
-    
+    .heroquote  {
+        top: 148%;
+        left: 95%;
+    }
+    #heroimage{
+       display: none;
+    }
     #heroimage-grid{
         display: grid;
         grid-column: 2/4;
@@ -53,15 +53,8 @@
         width: 100%;
         padding: 10px;
     }
-    .button {
-        display: none;
-    }
-     .heroquote  {
-        top: 148%;
-        left: 95%;
-    }
-
-   .events {
+      
+    .events {
         grid-column: 1/2;
         grid-row: 1/2;
     }

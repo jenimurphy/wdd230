@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Port Townsend Chamber of Commerce. Connecting the the community and the businesses that make PT a great place to live!">
+    <title>Port Townsend Chamber of Commerce</title>
+    <link rel="icon" type="image/x-icon" href="/wdd230/chamber/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="banner">
+            Come join us for the chamber meet and greet Wednesday at 7:00 p.m
+    </div>
+    <header>
+        <div class="hero-content"> 
+            <img class="heroicon" src="images/PTLogo2.webp" alt="PT Icon">            
+            <h1 class="maintitle">Port Townsend</h1>
+        </div>
+        <div>
+            <h2 class="mainsubtitle">Chamber of Commerce</h2>
+        </div>
+        <div class="headerdate">
+            <span id="todaysdate"></span>
+            <span class="socialheader">
+                <img class="socialicon" src="images/facebook.png" alt="Facebook icon">
+                <img class="socialicon" src="images/Instagram.png" alt="Instagram icon">
+            </span>
+        </div>
+    </header>
+        <nav>
+            <ul class="navigation">
+                <li><a id="menu" href="#">Menu</a></li>
+                <li><a href="/wdd230/chamber/index.html">HOME</a></li>
+                <li><a href="/wdd230/chamber/discover.html">DISCOVER</a></li>
+                <li><a href="#">DIRECTORY</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="/wdd230/chamber/join.html">JOIN</a></li>
+              </ul>
+        </nav>
+<main>
+    <div class = "joinForm form-title">Membership Application</div>
+    <div class = "join-content">Thank you for your interest in joining the Chamber of Commerce! We look forward to discussing how being a Chamber member can help grow your business!</div><br>
+
+    <form method="get" action = "/chamber/thankyou.html">
+            <div id="joininfo">
+                <fieldset class = "application">
+                    <legend>APPLICANT INFORMATION (* Required)</legend>
+                        <label>First Name:*
+                            <input name = "fname" type = "text" id = "firstname" required></label>
+                        <label>Last Name:*
+                            <input name = "lname" type = "text" id = "lastname" required></label>
+                        <label>Email:*
+                            <input name = "email" type = "email"  id = "email" required placeholder="name@domain.xxx" pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></label>
+                        <label>Cell Number:*
+                            <input name = "phone" type = "tel" id = "cellnumber" required placeholder = "xxx-xxx-xxxx">
+                </fieldset>
+                <fieldset class = "application">
+                    <legend>BUSINESS INFORMATION (* Required)</legend>
+                       <label>Business Position:
+                            <input name = "busposition" type = "text" id = "busposition" pattern = "[A-Za-z-_].{8,}"></label>
+                        <label>Business Name:*
+                            <input name = "businessname" type = "text"  id = "businessname" required></label>
+                        <label>Business Description:
+                            <textarea id="businessdescription" name = "businesdescription" rows="4" cols="50">
+                            </textarea></label>
+                </fieldset>
+            </div>
+        <div class ="join-grid">
+                <div id="joinlevels">
+                    <fieldset id = "levels">
+                        <legend>MEMBERSHIP LEVELS</legend>
+                        <div>
+                            <label><input type = "radio" name = "radio" id = "np" value = "np">NP - Non-Profit Organizations</label>
+                        </div>
+                        <div>
+                            <label><input type = "radio" name = "radio" id = "bronze" value = "bronze">BRONZE</label>
+                        </div>
+                        <div>
+                            <label><input type = "radio" name = "radio" id = "silver" value = "silver">SILVER</label>
+                        </div>
+                        <div>
+                            <label><input type = "radio" name = "radio" id = "gold" value = "gold">GOLD</label> 
+                        </div>
+                    </fieldset>
+                </div>
+            <div id="joinfeatures">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="5" scope="col" class="tabletitle">MEMBERSHIP FEATURES</th>
+                        </tr>
+                        
+                        <tr class="rowtitle">
+                            <th></th>
+                            <th id= "NP">NP</th>
+                            <th id= "BRONZE">BRONZE</th>
+                            <th id= "SILVER">SILVER</th>
+                            <th id= "GOLD">GOLD</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>COST PER YEAR</td>
+                            <td>$0</td>
+                            <td>$200</td>
+                            <td>$400</td>
+                            <td>$600</td>
+                        </tr>
+                        <tr>
+                            <td>DIRECTORY</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>ADVERTISING</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>WEBSITE FEATURE</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+
+                        <tr>
+                            <td>TRAINING EVENTS</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                        </tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+                
+        <input type = "hidden" name = "joinDate" id="joinDate" value = "joinDate">
+            <br><br>
+   
+        <input id = "submitButton" type = "submit" name="submit" value = "Join PT Chamber of Commerce">
+</form>
+</main>
+<footer>
+    <div class="chamberinfo">
+        <div id="coctitle">Port Townsend Chamber of Commerce</div>
+            <span>2409 Jefferson St B</span>
+            <br><span>Port Townsend, WA 98368</span>
+            <br><span>360-555-1212</span>
+            <br><span>📍<a href="https://goo.gl/maps/dWaTq9HRs2X9Qai26"> LOCATION MAP</a></span>
+         </div>
+    <div class="footericons">
+        <img class="socialicon" src="images/PTLogo2.webp" alt="PTIcon">
+        <img class="socialicon" src="images/facebook.png" alt="Facebook icon">
+        <img class="socialicon" src="images/Instagram.png" alt="Instagram icon">
+    </div>
+<br>
+    <div class="websiteinfo">
+     ©<span id="copyright"></span> - Jeniffer Murphy - WDD 230 - <span id="lastupdate"></span>
+    <br>
+    </div>
+</footer>
+<script src="scripts/chamber.js"></script>
+<script src="scripts/join.js"></script>
+</body>
+</html>
