@@ -1,12 +1,15 @@
-const todayDisplay = document.querySelector("#today");
-const visitsDisplay = document.querySelector("#visitcount");
+const today = new Date();
+const daysSince = localStorage.getItem('daysSince');
+// Display a different message based upon 1st visit or a returning visit
+if (daysSince) {
+  	const diffTime = today.getTime() - new Date(daysSince).getTime();
+	const diffDays = Math.round(diffTime / (1000 * 60 * 60 * 24));
 
-let countVisits = Number(window.localStorage.getItem("visits-ls"));
-if (countVisits !== 0) {
-	visitsDisplay.textContent = countVisits;
-} else {
-	visitsDisplay.textContent = `This is your first visit!`;
+  		if (diffDays < 1){
+  			document.getElementById("daysSince").innerText = `Welcome! This is your first visit to our Discover page`;
+  			} else{
+    			document.getElementById("daysSince").innerText = `Your last visit to this page: ${diffDays} days ago`;
+      		}
 }
-countVisits++;
-localStorage.setItem("visits-ls", countVisits);
 
+localStorage.setItem('daysSince', today);
