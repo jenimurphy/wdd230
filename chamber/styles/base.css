@@ -462,6 +462,12 @@ section {
     color: white;
 }
 
+h3 .join-content {
+    font-size: 1.2rem;
+    margin: 0px;
+    text-align: center;
+    }
+
 table {
 	margin: 10px auto;
 	border: thin solid darkslateblue;
