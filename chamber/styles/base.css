@@ -462,8 +462,9 @@ section {
     color: white;
 }
 
-h3 .join-content {
-    font-size: 1.2rem;
+.join-content h3 {
+    font-size: 1.35rem;
+    color: white;
     margin: 0px;
     text-align: center;
     }
