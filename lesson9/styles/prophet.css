@@ -28,7 +28,7 @@ p {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   }
 
 section {
@@ -36,6 +36,7 @@ section {
     padding: 3px;
     background-color: #eee;
     border: 1px solid #bbb;
+    box-shadow: 0 0 30px lightslategray;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,9 +47,9 @@ section {
   
   img {
     width: auto;
-    max-width: 325px;
+    max-width: 425px;
     box-shadow: 0 0 30px lightslategray;
-    height: 200px;
+    height: 300px;
     border: 1px solid #333;
     padding: 5px;
     margin: 10px;
