@@ -23,7 +23,7 @@ const displayBusiness = (business) => {
     bPhone.textContent = `Phone: ${business.busPhone}`;
 
     busIcon.setAttribute('src', business.busIcon);
-    busIcon.setAttribute('alt', `Business Icon of ${busName}`);
+    busIcon.setAttribute('alt', `Business Icon of ${business.busName}`);
     busIcon.setAttribute('loading', 'lazy');
     busIcon.setAttribute('width', '100');
     busIcon.setAttribute('height', '200');
