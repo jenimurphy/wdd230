@@ -16,4 +16,3 @@ let wChill = windChill(currentTemp, currentWind);
 
 //Display the Wind Chill Temperature
 document.getElementById('windchill').innerHTML = wChill;
-console.log(wChill);

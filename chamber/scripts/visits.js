@@ -5,11 +5,13 @@ if (daysSince) {
   	const diffTime = today.getTime() - new Date(daysSince).getTime();
 	const diffDays = Math.round(diffTime / (1000 * 60 * 60 * 24));
 
-  		if (diffDays < 1){
-  			document.getElementById("daysSince").innerText = `Welcome! This is your first visit to our Discover page`;
+  	if (diffDays < 1 ){
+  			document.getElementById("daysSince").innerText = `Welcome to our Discover page!`;
   			} else{
     			document.getElementById("daysSince").innerText = `Your last visit to this page: ${diffDays} days ago`;
-      		}
-}
-
+      		} 
+	} 
+	else{
+		document.getElementById("daysSince").innerText = 'First visit to PT Discovery page!'
+	}
 localStorage.setItem('daysSince', today);

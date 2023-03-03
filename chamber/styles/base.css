@@ -53,6 +53,10 @@ a:hover {
     margin-right: 5px;
 }
 
+.socialicon:hover {
+    opacity: 0.7;
+  }
+
 .socialheader {
     display: flex;
     flex-direction: row;
