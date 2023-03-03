@@ -17,7 +17,6 @@ const displayProphets = (prophets) => {
         let bDate = document.createElement('p');
         let bPlace = document.createElement('p');
   
-
     h2.textContent = `${prophet.name} ${prophet.lastname}`;
     bDate.textContent = `Born: ${prophet.birthdate}`;
     bPlace.textContent = `Birthplace: ${prophet.birthplace}`;
