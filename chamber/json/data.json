@@ -1,23 +1,15 @@
 {
         "business": [ {
             "busName": "Harborside Inn",
-            "busAddress": "330 Benedict St. Port Townsend, WA 98368",
+            "busAddress": "330 Benedict St.",
             "busPhone": "360.385.7909",
             "busURL": "http://www.harborside-inn.com",
-            "busIcon": "images/Harborside.gif",
-            "membershipLvl": "Silver"
-        },
-        {
-            "busName": "Chevy Chase Beach Cabins",
-            "busAddress": "3710 S. Discovery Rd. Port Townsend, WA 98368",
-            "busPhone": "360-385-1270",
-            "busURL": "http://www.chevychasebeachcabins.com/",
-            "busIcon": "",
+            "busIcon": "images/Harborside.webp",
             "membershipLvl": "Silver"
         },
         {
             "busName": "Rose Theatre",
-            "busAddress": "235 Taylor St. Port Townsend, WA 98368",
+            "busAddress": "235 Taylor St.",
             "busPhone": "360.385.1089",
             "busURL": "http://www.rosetheatre.com",
             "busIcon": "images/RoseTheater.webp",
@@ -25,7 +17,7 @@
         },
         {
             "busName": "Olympic Music Festival",
-            "busAddress": "1233 Lawrence St Suite 101 Port Townsend, WA 98368",
+            "busAddress": "1233 Lawrence St Suite 101",
             "busPhone": "360.385.9699",
             "busURL": "http://www.olympicmusicfestival.org",
             "busIcon": "images/OlympicMusicFest.webp",
@@ -33,15 +25,15 @@
         },
         {
             "busName": "Port Townsend Public Library",
-            "busAddress": "1220 Lawrence St. Port Townsend, WA 98368",
+            "busAddress": "1220 Lawrence St.",
             "busPhone": "360.385.3181",
             "busURL": "http://www.ptpubliclibrary.org",
-            "busIcon": "imags/library.png",
+            "busIcon": "images/library.webp",
             "membershipLvl": "nonprofit"
         },
         {
             "busName": "Port Townsend Film Festival",
-            "busAddress": "211 Taylor St. Ste. 401A Port Townsend, WA 98368",
+            "busAddress": "211 Taylor St. Ste. 401A",
             "busPhone": "360.379.1333",
             "busURL": "http://www.ptfilmfest.com",
             "busIcon": "images/PTFF-newLogo.webp",
@@ -49,7 +41,7 @@
         },
         {
             "busName": "Port Townsend Education Foundation",
-            "busAddress": "PO Box 1867 Port Townsend, WA 98368",
+            "busAddress": "PO Box 1867",
             "busPhone": "360.316.1233",
             "busURL": "https://www.pteducationfoundation.org/",
             "busIcon": "images/PTEdFoundation.webp",
@@ -57,7 +49,7 @@
         },
         {
             "busName": "Elevated Ice Cream Co. & Candy Shop",
-            "busAddress": "627 Water Street, Port Townsend WA 98368",
+            "busAddress": "627 Water Street",
             "busPhone": "(360) 385-1156",
             "busURL": "https://www.elevatedicecream.com/",
             "busIcon": "images/elevated.png",
@@ -65,18 +57,18 @@
         },
         {
             "busName": "Silverwater Cafe",
-            "busAddress": "237 Taylor St. Port Townsend, WA 98368",
+            "busAddress": "237 Taylor St.",
             "busPhone": "360.385.6448",
             "busURL": "http://www.silverwatercafe.com",
-            "busIcon": "images/silverwater.png",
+            "busIcon": "images/silverwater.webp",
             "membershipLvl": "gold"
         },
         {
             "busName": "Manresa Castle",
-            "busAddress": "651 Cleveland St,Port Townsend, WA 98368 ",
+            "busAddress": "651 Cleveland St",
             "busPhone": "360-385-5750",
             "busURL": "https://www.manresacastle.com/",
-            "busIcon": "images/manresa.png",
+            "busIcon": "images/manresa.webp",
             "membershipLvl": "gold"
         }
     ]

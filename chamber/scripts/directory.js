@@ -15,25 +15,25 @@ const displayBusiness = (business) => {
         let h2 = document.createElement('h2');
         let busIcon = document.createElement('img');
         let bAddress = document.createElement('p');
-        let bURL = document.createElement('p');
+        let bURL = document.createElement('a');
         let bPhone = document.createElement('p');
   
     h2.textContent = `${business.busName}`;
-    bAddress.textContent = `Business: ${business.busAddress}`;
-    bPhone.textContent = `Phone: ${business.busPhone}`;
+    bAddress.textContent = `${business.busAddress}`;
+    bPhone.textContent = `${business.busPhone}`;
+    bURL.textContent = `${business.busURL}`
 
     busIcon.setAttribute('src', business.busIcon);
     busIcon.setAttribute('alt', `Business Icon of ${business.busName}`);
     busIcon.setAttribute('loading', 'lazy');
-    busIcon.setAttribute('width', '100');
-    busIcon.setAttribute('height', '200');
+    busIcon.setAttribute('width', 'auto');
+    //busIcon.setAttribute('height', '100');
 
-    card.appendChild(h2);
     card.appendChild(busIcon);
+    card.appendChild(h2);
     card.appendChild(bAddress);
     card.appendChild(bPhone);
     card.appendChild(bURL);
-    card.appendChild(busIcon);
     
     cards.appendChild(card);
 })
