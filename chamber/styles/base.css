@@ -22,16 +22,7 @@ a:hover {
     color: white;
     cursor: pointer;
 }
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-    gap: 5px;
-    margin: 3px;
-    padding: 3px;
-    background-color: #eee;
-    border: 1px solid #bbb;
-    box-shadow: 0 0 30px lightslategray;
-}
+
 
 /*--------------HEADER------------------*/
 
@@ -545,15 +536,19 @@ tr th {
 
 /*--------------THANK YOU------------------*/
 
-dialog {
+#thankyoumsg {
     background-color: lightgrey;
     text-align: center;
-    justify-content: center;
+    border: thin solid darkblue;
     color:#134074;
+    padding: 25px;
+    max-width: 550px;
+    margin: auto;
 }
 
-dialog p {
+#thankyoumsg p {
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .close-button {
@@ -574,23 +569,111 @@ dialog p {
     background-color: rgb(53, 190, 190);
 }
 
+/*--------------DIRECTORY------------------*/
+.viewmenu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	text-align: center;
+}
 
-section {
+.viewmenu button {
+	padding: 1.25rem;
+    border-radius: 10%;
+	font-weight: 700;
+}
+
+.viewmenu button:hover {
+    background-color: grey;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 10px;
     margin: 3px;
     padding: 3px;
+    text-align: center;
+    justify-content: center;
+}
+
+.grid section {
+	flex-direction: column;
+	text-align: center;
+
+}
+
+.grid section > * {
+	margin: .5rem;
+}
+
+section {
+    padding: 3px;
     background-color: #eee;
-    border: 1px solid #bbb;
     box-shadow: 0 0 30px lightslategray;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    padding: 10px;
+    width: 525px;
+    margin: auto;
   }
-  section > p {
+
+  section p {
     min-height: 15px;
-    font-size: 1.5rem
-  }
+    font-size: 1.5rem;
+    text-align: center;
+}
 
   section a {
     font-size: 1.35rem;
     padding: 5px;
 }
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list section {
+    display: flex;
+    flex-direction: column;
+	padding: 10px;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; 
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: 'Quatro';
+}
+
+.list section:nth-child(even) {
+	background-color:#c0d5e8;
+}
+
+section h3 {
+	font-size: 1.5rem;
+}
+
+section h2 {
+	font-size: 1.6rem;
+}
+
+section p {
+    font-size: 1.15rem;
+}
+
+img {
+	height: 75px;
+	max-width: 100%; 
+}
+
+
