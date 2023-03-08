@@ -1,0 +1,56 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+    background-color: azure;
+    border: 5px double darkblue;
+    border-radius: 15px;
+    vertical-align: middle;
+}
+
+h1 {
+    color: darkblue;
+}
+
+p {
+    font-size: 1.25rem;
+    color: navy;
+    background-color: lightgray;
+    max-width: fit-content;
+    margin: auto;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+img {
+    width: 50px;
+    margin: auto;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: thin solid darkgray;
+    background-color: lightgrey;
+    max-width: 150px;
+    border-radius: 15px;
+    padding: 15px;
+    
+}
+
+figcaption {
+    font-size: 1.25rem;
+}
+
+footer {
+    padding: 10px;
+}
