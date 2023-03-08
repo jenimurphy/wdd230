@@ -29,10 +29,10 @@ async function apiFetch() {
     const weatherDesc = desc.split(" ");
         for (let i = 0; i < weatherDesc.length; i++) {
             weatherDesc[i] = weatherDesc[i][0].toUpperCase() + weatherDesc[i].substr(1);
-       }
-    captionDesc.textContent = weatherDesc[0] + ' ' + weatherDesc[1];
+        }
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
+    captionDesc.textContent = weatherDesc[0] + ' ' + weatherDesc[1];
     }
 
 //---- Footer Script-----//
