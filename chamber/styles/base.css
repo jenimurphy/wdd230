@@ -590,19 +590,13 @@ tr th {
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 5px;
-    /* 
-    margin: 3px;
-    padding: 3px;
-    */
-    text-align: center;
+    gap: 3px;
     justify-content: center;
+    align-content: center;
 }
 
 .grid section {
 	flex-direction: column;
-	text-align: center;
-
 }
 
 .grid section > * {
@@ -610,13 +604,12 @@ tr th {
 }
 
 section {
-
     background-color: #eee;
     box-shadow: 0 0 30px lightslategray;
     border: 1px solid #bbb;
     border-radius: 10px;
     margin: 5px;
-    
+    min-width: 300px;
     /*
         padding: 3px;
     padding-bottom: 10px;
@@ -626,7 +619,7 @@ section {
     margin: auto;
     */
 }
-article h2 {
+ h2 article {
     font-size: 1rem;
 }
 section p {
@@ -682,11 +675,5 @@ section p {
     font-size: 1.15rem;
 }
 
-/*
-figure img {
-	height: 75px;
-	max-width: 100%; 
-}
-*/
 
 
