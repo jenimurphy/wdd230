@@ -16,6 +16,7 @@ const displayBusiness = (business) => {
         let busIcon = document.createElement('img');
         let bAddress = document.createElement('p');
         let bURL = document.createElement('a');
+        bURL.href = business.busURL;
         let bPhone = document.createElement('p');
   
     h2.textContent = `${business.busName}`;
@@ -27,7 +28,7 @@ const displayBusiness = (business) => {
     busIcon.setAttribute('alt', `Business Icon of ${business.busName}`);
     busIcon.setAttribute('loading', 'lazy');
     busIcon.setAttribute('width', 'auto');
-    //busIcon.setAttribute('height', '100');
+ 
 
     card.appendChild(busIcon);
     card.appendChild(h2);
