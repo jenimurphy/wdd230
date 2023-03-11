@@ -16,7 +16,8 @@ const displayBusiness = (business) => {
         let busIcon = document.createElement('img');
         let bAddress = document.createElement('p');
         let bURL = document.createElement('a');
-        bURL.href = business.busURL;
+            bURL.href = business.busURL;
+            bURL.target = "_blank";
         let bPhone = document.createElement('p');
   
     h2.textContent = `${business.busName}`;
