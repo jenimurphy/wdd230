@@ -8,7 +8,7 @@ async function getBusinessData() {
 getBusinessData();
 
 const displayBusiness = (business) => {
-    const cards = document.querySelector('article.grid'); // select the output container element
+    const cards = document.querySelector('div.businessCards'); // select the output container element
 
     business.forEach((business) => {
         let card = document.createElement('section');
@@ -39,9 +39,9 @@ const displayBusiness = (business) => {
 })
 }
 
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
+const gridbutton = document.querySelector("#gridView");
+const listbutton = document.querySelector("#listView");
+const display = document.querySelector("div.businessCards");
 
 gridbutton.addEventListener("click", () => {
 	display.classList.add("grid");
