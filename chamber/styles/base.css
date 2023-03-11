@@ -587,6 +587,14 @@ tr th {
     color: white;
 }
 
+.businessCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3px;
+    justify-content: center;
+    align-content: center;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -614,9 +622,6 @@ section {
     padding: 10px;
 }
 
- h2 article {
-    font-size: 1rem;
-}
 section p {
     min-height: 15px;
     font-size: 1.5rem;
@@ -626,6 +631,10 @@ section p {
 section a {
     font-size: 1rem;
     padding: 5px;
+}
+
+section h2 {
+	font-size: 1.6rem;
 }
 
 .list {
@@ -658,17 +667,7 @@ section a {
 	background-color:#c0d5e8;
 }
 
-section h3 {
-	font-size: 1.5rem;
-}
 
-section h2 {
-	font-size: 1.6rem;
-}
-
-section p {
-    font-size: 1.15rem;
-}
 
 
 
