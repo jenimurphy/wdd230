@@ -351,10 +351,9 @@ a, #visitcount p, .imgattribution, .label {
 }
 
 figcaption {
-    color: white;
+    color: navy;
     font-style: italic;
     padding: 5px;
-    /* width: 800px; */
     align-content: center;
     text-align: center;
 }
