@@ -6,6 +6,13 @@
     .headerdate {
         font-size: 1.5rem;
     }
+
+    .heroquote {
+        position: absolute;
+        top: 170px;
+        left: 10%;
+
+    }
  /*--------------NAVIGATION------------------*/
     .navigation {
 		display: flex;
@@ -22,6 +29,12 @@
 		display: none;
 	}
 /*--------------MAIN------------------*/
+.button {
+    font-weight: bolder;
+    top: 1025px;
+    left: 25%;
+}
+
     h2 {
         font-size: 2.25rem;
     }
@@ -36,37 +49,20 @@
     .p-content {
         font-size: 1.5rem;
     }
-    .button {
-        display: none;
-    }
-    .heroquote  {
-        top: 148%;
-        left: 95%;
-    }
-    /*
-    #heroimage{
-       display: none;
-    }
-    
-    #heroimage-grid img{
-        /*display: grid;
-        grid-column: 2/4;
-        grid-row: 1/3;
-        height: auto;
-        padding: 10px;
-    }
-    */
+   
+   
 .main-wrapper {
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: repeat(3, 300px);
+    display: grid;
+    grid-template-columns: 1fr 1024px 1fr;
+    grid-template-rows: repeat(3, 350px);
     row-gap: 5px;
     column-gap: 5px;
 }
 
   #heroimage {
         grid-column: 2 / 3;
-        grid-row: 1 / 2;
-        max-width: 100%;
+        grid-row: 1 / 3;
+        width: 100%;
         height: auto;
         padding: 10px;
         gap: 10px;
@@ -110,14 +106,14 @@
         grid-template-columns: 1fr 2fr;
         grid-template-rows: auto;  
     }
-
-    figure img{
-        width: 600px;
-    }
-
+  
     .discoverImages{
         grid-column: 2/3;
         grid-row: 1/2;
+    }
+
+    .discImages {
+        width: 600px;
     }
 
     .ptdemographics {

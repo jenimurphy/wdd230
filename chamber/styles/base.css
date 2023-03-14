@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
   }
@@ -22,6 +23,12 @@ a:hover {
     color: rgb(81, 76, 76);
     cursor: pointer;
 }
+
+figure {
+    text-align: center;
+}
+
+
 
 /*--------------HEADER------------------*/
 
@@ -136,7 +143,7 @@ ul li {
 
 /*--------------MAIN------------------*/
 
-main.home {
+main.home{
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat( 5, minmax(250px, auto) );
@@ -160,14 +167,18 @@ main.home {
     border: 2px solid #13315C;
     font-size: 16px;
     opacity: 65%;
-    height: 25px;
-    width: 75px;
-    bottom: -5%;
-    right: 15%;
+    height: 35px;
+    width: 105px;
+    top: 760px;
+    left: 10%;
     cursor: pointer;
     }
     
 .button:hover {opacity: 95%}
+
+.join, .grid-button {
+    text-align: center;
+}
 
 q {
     color: #13315C;
@@ -181,14 +192,14 @@ q {
 }  
  
 .heroquote {
-    font-family: 'Parisienne';
-    font-size: 1rem;
-    color:#13315C;
-    /*color: whitesmoke; ---Only for week6*/
     position: absolute;
-    top: 50%;
-    left: 15%;
-    }
+    font-family: 'Parisienne';
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color:#13315C;
+    top: 160px;
+    left: 25%;
+}
 
 
 a {
@@ -255,6 +266,7 @@ p {
     font-size: 1.25em;
     margin: 0;
     text-align: center;
+    padding: 5px;
 }
 
 .grid-button {
@@ -262,7 +274,7 @@ p {
     border-radius: 12px;
     border: 2px solid #13315C;
     font-size: 18px;
-    height: 45px;
+    height: 35px;
     width: 155px;
     cursor: pointer;
     }
@@ -270,6 +282,7 @@ p {
     background-color: lightsteelblue;
     color: white;
 }
+
 
 table {
     margin-left: auto;
@@ -341,8 +354,9 @@ figcaption {
     color: white;
     font-style: italic;
     padding: 5px;
-    width: 800px;
+    /* width: 800px; */
     align-content: center;
+    text-align: center;
 }
 
 /*--------------FOOTER------------------*/
@@ -666,8 +680,6 @@ section h2 {
 .list section:nth-child(even) {
 	background-color:#c0d5e8;
 }
-
-
 
 
 
