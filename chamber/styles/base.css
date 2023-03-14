@@ -180,11 +180,6 @@ main.home{
     text-align: center;
 }
 
-q {
-    color: #13315C;
-    font-size: larger;
- }
-
 .grid-card-background {
     background-color: lightgrey;
     padding: 5px;
@@ -194,9 +189,9 @@ q {
 .heroquote {
     position: absolute;
     font-family: 'Parisienne';
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bolder;
-    color:#13315C;
+    color: black;
     top: 160px;
     left: 25%;
 }
