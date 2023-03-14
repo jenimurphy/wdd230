@@ -12,10 +12,13 @@
     }
     .heroquote {
         position: absolute;
+        font-family: 'Parisienne';
+        font-size: 2rem;
+        font-weight: bolder;
+        color: black;
         top: 145px;
-        font-size: 1.5rem;
-    }
-
+        left: 25%;
+        }
 
      /**************-MAIN-**************/
   
