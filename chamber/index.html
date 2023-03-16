@@ -16,7 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="banner">
+    <div id = "content" >
+    <div id = "banner">
             Come join us for the chamber meet and greet Wednesday at 7:00 p.m
     </div>
     <header>
@@ -48,58 +49,58 @@
                 <li><a href="/wdd230/chamber/discover.html">DISCOVER</a></li>
                 <li><a href="/wdd230/chamber/directory.html">DIRECTORY</a></li>
                 <li><a href="/wdd230/chamber/join.html">JOIN</a></li>
+                <li><a href="/wdd230/chamber/contact.html">CONTACT</a></li>
             </ul>
         </nav>
-<main>
-        <button class="button" onclick = "window.location.href='join.html';">JOIN</button>
-        <q class="heroquote">A great place to visit, even better to come and stay!</q><br>
-
-<div class = "main-wrapper"> 
-        <div id="heroimage">
-            <picture>
-                <source srcset="images/Sailboats500.jpg" media="(max-width: 799px)">
-                <source srcset="images/Sailboats800.jpg" media="(max-width: 1000px)">
-                <source srcset="images/Sailboats1024.jpg" media="(min-width: 1001px)">
-                <img src = "images/Sailboats1024.jpg" alt = "Sailboats">
-            </picture>
-        </div>
+    <main>
+        
+    <div class = "main-wrapper"> 
+            <div id="heroimage">
+                 <picture>
+                    <source srcset="images/Sailboats500.jpg" media="(max-width: 799px)">
+                    <source srcset="images/Sailboats800.jpg" media="(max-width: 1000px)">
+                    <source srcset="images/Sailboats1024.jpg" media="(min-width: 1001px)">
+                    <img src = "images/Sailboats1024.jpg" alt = "Sailboats">
+                </picture>
+                  <button class = "joinButton" onclick = "window.location.href='join.html';">JOIN US</button>
+               
+            </div>
        
-        <div class="events grid-card-background">
-            <div class='card-title'>Events</div>
-            <h3>Chamber Cafe - Annual State of the County</h3>
-            <p class="p-content">Date: February 3, 2023
-            Time: 10:00 AM - 11:15 AM PST</p>
-            <br>
-        </div>
-        <div class="weather grid-card-background">
-            <div class='card-title'>Weather</div>
-            <p class="p-content">
-                Current Conditions: 
-                    <figure>
-                        <img id="weather-icon">
-                        <figcaption></figcaption>
-                    </figure>
-                    <hr> 
-                <p class = 'p-content'>Temperature: <span id="current-temp"></span> ℉ <br>
-                Wind Speed: <span id="current-wind"></span> mp/h<br> 
-                Wind Chill:  <span id="wChill"></span><br>
-                </p>
-            </p>
-            <br>
-        </div>
-        <div class="news grid-card-background">
+            <div class="events grid-card-background">
+                <div class='card-title'>Events</div>
+                <h3>Chamber Cafe - Annual State of the County</h3>
+                <p class="p-content">Date: February 3, 2023
+                Time: 10:00 AM - 11:15 AM PST</p>
+                <br>
+            </div>
+            <div class="weather grid-card-background">
+                <div class='card-title'>Weather</div>
+                    <p class="p-content">
+                        Current Conditions: 
+                            <figure>
+                                <img id = "weather-icon" src = "#" alt = "weather icon">
+                                <figcaption></figcaption>
+                            </figure>
+                            <hr> 
+                        <p class = 'p-content'>Temperature: <span id="current-temp"></span> ℉ <br>
+                        Wind Speed: <span id="current-wind"></span> mp/h<br> 
+                        Wind Chill:  <span id="wChill"></span><br>
+                        </p>
+                <br>
+            </div>
+            <div class="news grid-card-background">
             <div class='card-title'>News Release</div>
                 <p class="p-content">The Chamber is excited to announce that nominations are now open for the 2023 Jefferson County Community Leadership Awards.</p>
                 <p class="p-content">The Awards Ceremony will be held at the American Legion, March 25, 2023.</p>
                 <br>
-        </div>
-        <div class="join grid-card-background">
-            <div class='card-title'>Join</div>
-                <p class="p-content">We have multiple levels of Membership investment. We would welcome the opportunity to discuss them with you.</p><br>
-                <button class="grid-button" onclick = "window.location.href='join.html';">JOIN</button>
-                <br>
+            </div>
+            <div class="join grid-card-background">
+                <div class='card-title'>Join</div>
+                    <p class="p-content">We have multiple levels of Membership investment. We would welcome the opportunity to discuss them with you.</p><br>
+                    <button class="grid-button" onclick = "window.location.href='join.html';">JOIN</button>
+                    <br>
             </div> 
-        <div class ="spotlight1 grid-card-background">
+            <div class ="spotlight1 grid-card-background">
                 <div class='card-title'>Bed & Breakfast</div>
                 <h3>Manresa Castle</h3>
                 <p class="p-content">651 Cleveland St.</p>
@@ -137,35 +138,35 @@
                 <br>
                 <br>
             </div>
-    </div>
-</main>
-
-<footer>
-    <div class="chamberinfo">
-        <div id="coctitle">Port Townsend Chamber of Commerce</div>
-            <span>2409 Jefferson St B</span>
-            <br><span>Port Townsend, WA 98368</span>
-            <br><span>360-555-1212</span>
-            <br><span>📍<a href="https://goo.gl/maps/dWaTq9HRs2X9Qai26"> LOCATION MAP</a></span>
-         </div>
-    <div class="footericons">
-        <a href="https://jenimurphy.github.io/wdd230/chamber/index.html">
-            <img class="socialicon" src="images/PTLogo2.webp" alt="PTIcon">
-        </a>
-        <a href="https://www.facebook.com/groups/porttownsendchat">
-            <img class="socialicon" src="images/facebook.png" alt="Facebook icon">
-        </a>
-        <a href="https://www.instagram.com/enjoyporttownsend/">
-            <img class="socialicon" src="images/Instagram.png" alt="Instagram icon">
-        </a>
-    </div>
-<br>
-    <div class="websiteinfo">
-     ©<span id="copyright"></span> - Jeniffer Murphy - WDD 230 - <span id="lastupdate"></span>
-    <br>
-    </div>
-</footer>
-<script src="scripts/chamber.js"></script>
-<script src="scripts/ptWeather.js"></script>
-</body>
+        </div>
+    </main>
+        <footer>
+            <div class="chamberinfo">
+                <div id="coctitle">Port Townsend Chamber of Commerce</div>
+                    <span>2409 Jefferson St B</span>
+                    <br><span>Port Townsend, WA 98368</span>
+                    <br><span>360-555-1212</span>
+                    <br><span>📍<a href="https://goo.gl/maps/dWaTq9HRs2X9Qai26"> LOCATION MAP</a></span>
+                </div>
+            <div class="footericons">
+                <a href="https://jenimurphy.github.io/wdd230/chamber/index.html">
+                    <img class="socialicon" src="images/PTLogo2.webp" alt="PTIcon">
+                </a>
+                <a href="https://www.facebook.com/groups/porttownsendchat">
+                    <img class="socialicon" src="images/facebook.png" alt="Facebook icon">
+                </a>
+                <a href="https://www.instagram.com/enjoyporttownsend/">
+                    <img class="socialicon" src="images/Instagram.png" alt="Instagram icon">
+                </a>
+            </div>
+            <br>
+            <div class="websiteinfo">
+            ©<span id="copyright"></span> - Jeniffer Murphy - WDD 230 - <span id="lastupdate"></span>
+            <br>
+        </div>
+        </footer>
+            <script src="scripts/chamber.js"></script>
+            <script src="scripts/ptWeather.js"></script>
+        </div>
+    </body>
 </html>

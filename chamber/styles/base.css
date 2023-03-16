@@ -1,12 +1,18 @@
 
 * {
     box-sizing: border-box;
+    outline: white 1px 
   }
 
 body {
-    margin: 15px 15px; 
+    margin: 15px 15px;
     background: #134074;
    }
+
+#content { 
+    max-width: 1600px;
+    margin: auto;
+} 
 #banner {
     display: block;
     text-align: center;
@@ -149,29 +155,21 @@ main.home{
   margin: 20px 0;
 }
 
+.joinButton {
+    display: none;
+}
+
 #heroimage img {
     width: 100%;
-    height: auto;
-}
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+ }
 
 #heroimage-grid{
     display: none;
 }
-
-.button {
-    position: absolute;
-    background-color: #c0d5e8;
-    border-radius: 12px;
-    border: 2px solid #13315C;
-    font-size: 16px;
-    opacity: 65%;
-    height: 35px;
-    width: 105px;
-    top: 760px;
-    left: 10%;
-    cursor: pointer;
-    } 
-    
+ 
 .button:hover {opacity: 95%}
 
 .join, .grid-button {
@@ -255,8 +253,8 @@ p {
     text-align: center;
     }
 
-.p-content {
-    font-size: 1.25em;
+p.p-content {
+    font-size: 1rem;
     margin: 0;
     text-align: center;
     padding: 5px;
@@ -275,7 +273,6 @@ p {
     background-color: lightsteelblue;
     color: white;
 }
-
 
 table {
     margin-left: auto;
@@ -385,7 +382,6 @@ footer {
     width: 45px;
     justify-content: center;
 }
-
 
 /*--------------FORM------------------*/
 form {
@@ -526,10 +522,10 @@ tr th {
     border-radius: 1rem;
     width: 100%;
     max-width: 25rem;
+    align-items: center;
     cursor: pointer;
     font-size: 1.5rem;
     font-weight: 700;
-    padding: .5rem 1.5rem;
     margin: 0 0 2rem 1%;
     background-color: lightslategray;
     color: white;

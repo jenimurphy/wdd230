@@ -18,19 +18,10 @@
         color: black;
         top: 145px;
         left: 25%;
-        }
+    }
 
      /**************-MAIN-**************/
-  
-     .button {
-        position: absolute;
-        font-weight: bolder;
-        top: 935px;
-        left: 10%;
-        height: 45px;
-        width: 155px;
-    }
-  
+
     .main-wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -42,8 +33,22 @@
     #heroimage {
         grid-row: 1/2;
         grid-column: 1 / 5;
-        width: 100%;
-        height: auto;
+    }
+
+    .joinButton {
+        display: inline-block;
+        position: absolute;
+        background-color: #c0d5e8;
+        border-radius: 12px;
+        border: 2px solid #13315C;
+        font-size: 16px;
+        opacity: 65%;
+        height: 35px;
+        width: 145px;
+        top: 500px;
+        left: 60px;
+        cursor: pointer;
+        text-align: center;
     }
     .news {
         grid-row: 2 / 3;
