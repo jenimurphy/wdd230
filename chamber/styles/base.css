@@ -349,7 +349,7 @@ figcaption {
     text-align: center;
 }
 
-figcaption, #homeWeatherCaption  {
+#homeWeatherCaption  {
     color: black;
 }
 
