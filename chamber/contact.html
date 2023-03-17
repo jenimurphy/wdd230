@@ -16,86 +16,122 @@
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
 <body>
     <div id = "content">
-    <div id="banner">
-        Come join us for the chamber meet and greet Wednesday at 7:00 p.m
-</div>
-<header>
-    <div class="hero-content"> 
-        <a href="https://jenimurphy.github.io/wdd230/chamber/index.html">
-            <img class="heroicon" src="images/PTLogo2.webp" alt="PT Icon">
-        </a>            
-        <h1 class="maintitle">Port Townsend</h1>
-    </div>
-    <div>
-        <h2 class="mainsubtitle">Chamber of Commerce</h2>
-    </div>
-    <div class="headerdate">
-        <span id="todaysdate"></span>
-        <span class="socialheader">
-            <a href="https://www.facebook.com/groups/porttownsendchat">
-                <img class="socialicon" src="images/facebook.png" alt="Facebook icon">
-            </a>
-            <a href="https://www.instagram.com/enjoyporttownsend/">
-                <img class="socialicon" src="images/Instagram.png" alt="Instagram icon">
-            </a>
-        </span>
-    </div>
-</header>
-    <nav>
-        <ul class="navigation">
-            <li><a id="menu" href="#">Menu</a></li>
-            <li><a href="/wdd230/chamber/index.html">HOME</a></li>
-            <li><a href="/wdd230/chamber/discover.html">DISCOVER</a></li>
-            <li><a href="/wdd230/chamber/directory.html">DIRECTORY</a></li>
-            <li><a href="/wdd230/chamber/join.html">JOIN</a></li>
-            <li><a href="/wdd230/chamber/contact.html">CONTACT</a></li>
-        </ul>
-    </nav>
+        <div id = "banner">
+            Come join us for the chamber meet and greet Wednesday at 7:00 p.m
+        </div>
+        <header>
+            <div class="hero-content"> 
+                <a href="https://jenimurphy.github.io/wdd230/chamber/index.html">
+                    <img class="heroicon" src="images/PTLogo2.webp" alt="PT Icon">
+                </a>            
+                <h1 class="maintitle">Port Townsend</h1>
+            </div>
+            <div>
+                <h2 class="mainsubtitle">Chamber of Commerce</h2>
+            </div>
+            <div class="headerdate">
+                <span id="todaysdate"></span>
+                <span class="socialheader">
+                    <a href="https://www.facebook.com/groups/porttownsendchat">
+                        <img class="socialicon" src="images/facebook.png" alt="Facebook icon">
+                    </a>
+                    <a href="https://www.instagram.com/enjoyporttownsend/">
+                        <img class="socialicon" src="images/Instagram.png" alt="Instagram icon">
+                    </a>
+                </span>
+            </div>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a id="menu" href="#">Menu</a></li>
+                <li><a href="/wdd230/chamber/index.html">HOME</a></li>
+                <li><a href="/wdd230/chamber/discover.html">DISCOVER</a></li>
+                <li><a href="/wdd230/chamber/directory.html">DIRECTORY</a></li>
+                <li><a href="/wdd230/chamber/join.html">JOIN</a></li>
+                <li><a href="/wdd230/chamber/contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
 <main>
     <div class = "form-title">
         <h1>Contact the Chamber</h1>
     </div>
-    <div class = "join-content">
-        <h2>VISIT</h2>
-        
-
-        
-        
-    </div> 
-    
-
-
-
-
-</main>
-    
-<footer>
-    <div class="chamberinfo">
-        <div id="coctitle">Port Townsend Chamber of Commerce</div>
-            <span>2409 Jefferson St B</span>
-            <br><span>Port Townsend, WA 98368</span>
-            <br><span>360-555-1212</span>
-            <br><span>📍<a href="https://goo.gl/maps/dWaTq9HRs2X9Qai26"> LOCATION MAP</a></span>
+    <div id = "contactUs">
+        <div id = "contactUsInfo">
+            <h2>CHAMBER INFORMATION</h2>
+            <hr>
+            <div><p class = "chamberInfo-title">ADDRESS</p>
+                <div id="coctitle">Port Townsend Chamber of Commerce</div>
+                <span>2409 Jefferson St B</span>
+                <br><span>Port Townsend, WA 98368</span>
+                <br><span>📍<a href="https://goo.gl/maps/dWaTq9HRs2X9Qai26"> LOCATION MAP</a></span>
             </div>
-    <div class="footericons">
-        <a href="https://jenimurphy.github.io/wdd230/chamber/index.html">
-            <img class="socialicon" src="images/PTLogo2.webp" alt="PTIcon">
-        </a>
-        <a href="https://www.facebook.com/groups/porttownsendchat">
-            <img class="socialicon" src="images/facebook.png" alt="Facebook icon">
-        </a>
-        <a href="https://www.instagram.com/enjoyporttownsend/">
-            <img class="socialicon" src="images/Instagram.png" alt="Instagram icon">
-        </a>
+            <div>
+                <br><p class = "chamberInfo-title">PHONE</p>
+                <span>360-555-1212</span>
+            </div>
+            <div>
+                <br><p class = "chamberInfo-title">EMAIL</p>
+                <span>ptchamberofcommerce@gmail.com</span>
+            </div>
+            <div>
+                <br><p class = "chamberInfo-title">CHAMBER HOURS</p>
+                <span>Monday through Friday</span>
+                <br><span>10:00am - 4:00pm</span>
+                <br>
+                <br>
+            </div>
+        </div>
+
+
+        <div id = "contactInquiry">
+            <form method="get" action = "thankyouContact.html">
+                <div id="contactInfo">
+                    <fieldset class = "application">
+                        <legend>CONTACT INFORMATION (* Required)</legend>
+                            <label>First Name:*
+                                <input name = "fname" type = "text" id = "firstname" required></label>
+                            <label>Last Name:*
+                                <input name = "lname" type = "text" id = "lastname" required></label>
+                            <label>Email:*
+                                <input name = "email" type = "email"  id = "email" required placeholder="name@domain.xxx" pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></label>
+                            <label>Cell Number:
+                                <input name = "phone" type = "tel" id = "cellnumber" placeholder = "xxx-xxx-xxxx"></label>
+                            <label>Question:*
+                                <input name = "question" type = "text" id = "question" required ></label>
+                    </fieldset>
+                </div>
+                <input id = "submitButton" type = "submit" name="submit" value = "Submit Chamber Inquiry">
+            </form>
+        </div>
+       
     </div>
-<br>
-    <div class="websiteinfo">
-        ©<span id="copyright"></span> - Jeniffer Murphy - WDD 230 - <span id="lastupdate"></span>
-    <br>
-    </div>
-</footer>
+</main>
+        <footer>
+            <div class="chamberinfo">
+                <div id="coctitle">Port Townsend Chamber of Commerce</div>
+                    <span>2409 Jefferson St B</span>
+                    <br><span>Port Townsend, WA 98368</span>
+                    <br><span>360-555-1212</span>
+                    <br><span>📍<a href="https://goo.gl/maps/dWaTq9HRs2X9Qai26"> LOCATION MAP</a></span>
+                    </div>
+            <div class="footericons">
+                <a href="https://jenimurphy.github.io/wdd230/chamber/index.html">
+                    <img class="socialicon" src="images/PTLogo2.webp" alt="PTIcon">
+                </a>
+                <a href="https://www.facebook.com/groups/porttownsendchat">
+                    <img class="socialicon" src="images/facebook.png" alt="Facebook icon">
+                </a>
+                <a href="https://www.instagram.com/enjoyporttownsend/">
+                    <img class="socialicon" src="images/Instagram.png" alt="Instagram icon">
+                </a>
+            </div>
+        <br>
+            <div class="websiteinfo">
+                ©<span id="copyright"></span> - Jeniffer Murphy - WDD 230 - <span id="lastupdate"></span>
+            <br>
+            </div>
+        </footer>
     <script src="scripts/chamber.js"></script>
-    <script src="scripts/directory.js"></script>
     </div>
 </body>
 </html>
