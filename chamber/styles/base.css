@@ -34,6 +34,15 @@ figure {
     text-align: center;
 }
 
+.closeButton {
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    
+
+}
+
 /*--------------HEADER------------------*/
 
 .hero-content {
@@ -202,7 +211,7 @@ a {
 
 h1 {
     font-family: 'Parisienne';
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 10px;
     }
 
@@ -371,7 +380,7 @@ footer {
     background: #EEF4ED;
     }
 
-.chamberinfo #coctitle {
+.chamberinfo .chamberTitle {
     margin: auto;
     padding: 5px;
     font-family: 'Parisienne';
@@ -406,16 +415,18 @@ fieldset {
     display: flex;
     flex-direction: column;
     padding: 5px;
+       
 }
 
 form fieldset {
     margin: 2rem 0;
     border-radius: 10px;
-    padding: .5rem 
+    padding: .5rem
+   
 }
 
 .application input{
-    width: 400px;
+    width: 350px;
 }
 
 .application input:required {
@@ -440,8 +451,8 @@ legend {
     border-radius: 2rem;
     background-color: lightgrey;
     color:#13315C;
-    width: 400px;
-    font-size: 1.2rem;
+    width: 350px;
+    font-size: 1.1rem;
     padding: .5rem .75rem;
 }
 
@@ -476,9 +487,8 @@ ul #membershipbenefits {
     font-size: .95rem;
     color: white;
 }
-
-.join-content h3 {
-    font-size: 1.35rem;
+.join-content h2 {
+    font-size: 1rem;
     color: white;
     margin: 0px;
     text-align: center;
@@ -562,13 +572,13 @@ tr th {
 .close-button {
     border: none;
     width: 150px;
+    margin: auto;
     text-align: center;
     cursor: pointer;
     background: lightslategray;
     border: 1px solid rgb(53, 190, 190);
     color: navy;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.1rem;
     padding: 12px 32px;
     border-radius: 4px;
 }

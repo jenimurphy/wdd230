@@ -119,6 +119,13 @@
         margin: 10px;
     }
 
+/*--------------JOIN------------------*/
+    .join-content h2 {
+        font-size: 1.25rem;
+        color: white;
+        margin: 0px;
+        text-align: center;
+        }
 
 
 }
