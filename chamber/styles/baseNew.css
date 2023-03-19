@@ -20,11 +20,6 @@ body {
     font-size: 1.15rem;
     padding: 5px;
 }
-
-.p-content a {
-    font-size: 1.35rem;
-}
-
 a:link {
     text-decoration: none;
     cursor: pointer;
@@ -205,6 +200,10 @@ main.home{
     left: 25%;
 }
 
+
+a {
+    font-size: 1.25rem;
+}
 .page-title {
     color: white;
 }

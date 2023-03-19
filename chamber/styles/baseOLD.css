@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     outline: white 1px 
@@ -20,11 +21,6 @@ body {
     font-size: 1.15rem;
     padding: 5px;
 }
-
-.p-content a {
-    font-size: 1.35rem;
-}
-
 a:link {
     text-decoration: none;
     cursor: pointer;
@@ -205,13 +201,17 @@ main.home{
     left: 25%;
 }
 
+
+a {
+    font-size: 1.25rem;
+}
 .page-title {
     color: white;
 }
 
 h1 {
     font-family: 'Parisienne';
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 10px;
     }
 
@@ -452,7 +452,7 @@ legend {
     background-color: lightgrey;
     color:#13315C;
     width: 350px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding: .5rem .75rem;
 }
 
@@ -487,7 +487,8 @@ ul #membershipbenefits {
     font-size: .95rem;
     color: white;
 }
-.join-content h2 {
+
+.join-content h3 {
     font-size: 1rem;
     color: white;
     margin: 0px;

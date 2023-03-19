@@ -39,7 +39,7 @@
         grid-column: 1 / 5;
     }
 
-    .joinButton {
+    form .joinButton {
         display: inline-block;
         position: absolute;
         background-color: #c0d5e8;
@@ -49,8 +49,8 @@
         opacity: 65%;
         height: 35px;
         width: 145px;
-        top: 500px;
-        left: 60px;
+        left: 70%;
+        bottom: -10%;
         cursor: pointer;
         text-align: center;
     }
