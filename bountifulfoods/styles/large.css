@@ -1,0 +1,120 @@
+@media only screen and (min-width: 1024px) {
+/*--------------SITE-WIDE-STYLING--------------*/
+#content {
+     max-width: 1200px;
+     margin: 0 auto;
+   }
+
+/*----------------HEADER------------------*/
+.hero-image{
+     width: 45%;
+}
+
+/*----------------HOME-------------------*/
+.main-wrapper {
+     grid-template-columns: 1fr 400px 1fr;
+     grid-template-rows: auto;
+}
+
+.storeHours {
+     grid-column: 1 /2;
+}
+.fruitImages2 {
+     grid-column: 2 / 3;
+}
+
+.fruitImages1 {
+     grid-column: 2 / 3;
+     grid-row: 2 / 4;
+}
+
+.areaInfo {
+     grid-column: 3 / 4;
+     text-align: center;
+}
+
+.foodTrucks {
+     grid-column: 1 / 2;
+     grid-row: 2 / 3;
+}
+
+.currentWeather {
+     grid-column: 1 / 2;
+     grid-row: 2 / 3;
+}
+
+.forecastWeather {
+     grid-column: 1 / 2;
+     grid-row: 3 / 4;
+}
+
+.areaInfo {
+     grid-column: 3 / 4;
+     grid-row: 1 / 2;
+     line-height: 1.25rem;
+}
+
+.cta {
+     grid-column: 2 / 3;
+     grid-row: 1 / 2;
+}
+
+.socialMedia {
+     grid-column: 3 / 4;
+     grid-row: 2 / 3;
+}
+
+.freshCreations {
+     grid-column: 3 / 4;
+     grid-row: 3 / 4;
+}
+
+/*----------------NAVIGATION------------------*/
+
+   
+/*----------------FRESH------------------*/
+.order-wrapper{
+     max-width: 1024px;
+     column-gap: 20px;
+     padding: 0;
+     margin: 0 auto 5px auto;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: auto;
+}
+
+.customerInfo {
+     grid-column: 1 / 2;
+}
+
+.ingredients {
+     grid-column: 2 / 3;
+     display: flex;
+     flex-direction: column;
+}
+
+.orderDetails {
+     grid-column: 3 / 4;
+}
+/*----------------ABOUT US------------------*/
+.about-wrapper{
+     max-width: 1024px;
+     column-gap: 20px;
+     padding: 0;
+     grid-template-columns: 1fr 350px 350px;
+     grid-template-rows: auto;
+}
+
+#yourInfo {
+     grid-column: 3 / 4;
+     grid-row: 1 / 2;
+     padding: 0;
+}
+
+#carlsbadImage1 {
+     width: 340px;
+     height: 230px;
+     padding: 0;
+}
+
+/*----------------FOOTER------------------*/
+}

@@ -1,0 +1,137 @@
+@media only screen and (min-width: 800px) {
+/*--------------SITE-WIDE-STYLING--------------*/
+#content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+.page-title {
+    font-size: 1.75rem;
+    width: 100%;
+}
+/*----------------HEADER------------------*/
+
+/*----------------NAVIGATION------------------*/
+.navMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page-title {
+    font-size: 1.5rem;
+}
+
+.navMenu-links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+  }
+
+.navMenu-links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.toggle {
+    display: none;
+}
+/*----------------HOME-------------------*/
+.main-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    align-content: center;
+}
+.cta {
+    font-size: 1.25rem;   
+}
+
+.fruitImages1 {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+}
+.fruitImages2 {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+/*----------------FRESH------------------*/
+.order-wrapper{
+    display: grid;
+    width: 800px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    font-size: smaller;
+    margin: 10px;
+}
+
+#submitButton {
+    margin: 10px 10px;
+  }
+
+.freshCustomerForm {
+    grid-column: 1 / 2;
+    width: 375px;
+}
+
+.orderDetails {
+    grid-column: 1 / 2  ;
+    width: 375px;
+    min-height: 400px;
+}
+
+.customerInfo, .ingredients{
+    display: flex;
+    width: 375px;
+    flex-direction: column;
+    align-content: center;
+}
+
+/*----------------ABOUT US------------------*/
+.about-wrapper{
+    display: grid;
+    width: 800px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    font-size: smaller;
+    margin: 10px;
+}
+
+#ourInfo {
+    grid-column: 1 / 2;
+    width: 350px;
+}
+
+#ourContactInfo {
+    grid-column: 2 / 3;
+}
+
+#yourInfo {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    
+}
+
+.carlsbadImages {
+    display: flex;
+    flex-direction: row;
+    margin: 0 5px;
+    justify-content:space-around;
+    align-items: center;
+  }
+
+  #carlsbadImage1 {
+    width: 340px;
+    height: 230px;
+    padding: 0;
+}
+/*----------------FOOTER------------------*/
+}

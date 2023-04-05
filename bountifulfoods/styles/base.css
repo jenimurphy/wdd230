@@ -1,0 +1,608 @@
+/*--------------BODY (SITE-WIDE-STYLING)--------------*/
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+font-family: 'Lobster Two', cursive; /*Site Header*/
+font-family: 'Asap', sans-serif; /*Navigation*/
+font-family: 'Glass Antiqua', cursive; /*Headings*/
+font-family: 'Pridi', serif; /*Paragraphs&Anchors*/
+background-color: #fff;
+margin: 15px 15px;
+}
+
+#content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+header, footer {
+  align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.hr-line {
+  border-top: 1px solid #470063;
+}
+
+#submitButton {
+  padding: 10px;
+  border-radius: 20px;
+  width: 300px;
+  background-color:#DB2763;
+  opacity: 80%;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 10px 25px;
+}
+
+#submitButton:hover {
+  background-color:#470063;
+  color:white; 
+}
+
+.order-button:hover, #order-button:hover {
+  background-color:#470063;
+}
+
+.order-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color:#DB2763;
+  color: white;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.125rem;
+}
+
+#order-button {
+  background-color:#DB2763;
+  text-decoration: none;
+  color: white;
+  border: none;
+}
+
+
+.order-button a{
+  background-color: #DB2763;
+  text-decoration: none;
+}
+
+.page-title{
+  font-family: 'Lobster Two', cursive;
+  font-size: 1.25rem;
+  color: #470063;
+  padding: 5px 0;
+  margin: 0 0 5px 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2.label{
+  color: #470063;
+  font-family: 'Glass Antiqua';
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 10px;
+}
+
+#foodTruckLabel{
+  text-align: center;
+}
+
+
+p {
+  font-family: 'Pridi';
+  font-size: 18px;
+  padding: 5px;
+}
+
+.p-label {
+  color:#470063;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding: 5px 0;
+  margin-top: 5px;
+}
+
+q {
+  font-size: 1.25rem;
+  font-family: 'Pridi';
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+
+span {
+  font-size: 1.375rem;
+}
+
+
+span p {
+  font-size: 1.25rem;
+}
+
+.background-card {
+  background-color: rgb(237, 236, 236);
+  padding: 5px;
+  margin: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+#maplink {
+  color: white;
+  text-decoration: none;
+}
+
+#maplink:hover {
+  color:#DB2763;
+}
+/*----------------HEADER------------------*/
+#hero-image {
+  display: block;
+  max-width: 350px;
+  margin: 0;
+}
+
+#header-berries {
+  max-width: 150px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    object-fit: cover;
+    position: relative;
+}
+
+
+/*----------------NAVIGATION------------------*/
+.toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle .line {
+  height: 3px;
+  width: 100%;
+  background-color:#470063;
+  border-radius: 10px;
+}
+
+.navMenu-links {
+  display: none;
+  width: 100%;
+}
+
+.navMenu {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navMenu-links ul {
+  width: 100%;
+  flex-direction: column;
+}
+
+.navMenu-links li {
+  list-style: none;
+  text-align: center;
+}
+
+.navMenu-links li a {
+  text-decoration: none;
+  color: #470063;
+    padding: .5rem 1rem;
+    display: block;
+    font-family: 'Asap';
+    font-size: 1.225rem;
+}
+
+.navMenu-links.active {
+  display: flex;
+}
+
+.navMenu-links li:hover {
+  background-color: #79afad;
+  border-radius: 10px;
+  
+}
+
+/*----------------HOME-------------------*/
+.storeHours table {
+  font-size: 1.25rem;
+  padding-bottom: 10px;
+}
+
+figure {
+  max-height: 95px;
+}
+
+figcaption {
+  font-size: 1.4rem;
+}
+
+figure #weather-icon {
+  max-height: 100px;
+}
+
+#homeWeatherCaption {
+  margin: 10px 0;
+}
+.freshCreations span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+#ctaButton {
+  background-color: #DB2763;
+  color: white;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#ctaButton a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: white;
+}
+
+#ctaButton a:hover {
+  color:#470063;
+}
+
+.ctaSmallOrderButton {
+  background-color: #DB2763;
+  color: white;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 15px;
+  margin: 30px 15px;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ctaSmallOrderButton a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.125rem;
+}
+
+.ctaSmallOrderButton:hover {
+  color: white;
+  background-color:#470063;
+}
+
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    justify-content: center;
+}
+
+.fruitImages1 {
+  display: none;
+  object-fit: cover;
+}
+
+.fruitImages2 {
+  text-align: center;
+  object-fit: cover;
+}
+
+.currentWeather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#weather-icon {
+  max-width: 100px;
+}
+
+.currentWeather,.currentTempHumid {
+  font-size: 1.25rem;
+  text-align: center;
+  
+}
+.currentTempHumid p {
+  font-size: 1.35rem;
+  padding: 10px 0 10px 0;
+}
+
+#current-temp #current-humidity {
+  font-size: 1.5rem;
+ }
+
+.storeHours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table td {
+  padding: 5px;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.socialIconCard {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+   
+
+.forecastWeather {
+  display: flex;
+  flex-direction: row;
+  color:#470063;
+  text-align:center;
+  font-size: .75rem;
+  line-height: 1em;
+}
+
+
+.forecast-wrapper img {
+  width: 75px;
+  height: 75px;
+
+}
+.forecast-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#dayForecast p{
+  display: inline-flex;
+  margin: 5px;
+  font-size: 1.125rem;
+}
+
+/*----------------FRESH------------*/
+.order-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  margin: 0 0;
+  padding: 5px;
+  justify-content: center;
+}
+
+input {
+  width: 275px;
+  padding: 10px 5px;
+  margin: 5px;
+}
+
+label {
+  font-family: 'Pridi';
+  font-weight: bolder;
+  color:#470063;
+  font-size: 1.1rem;
+}
+
+legend {
+  color:#250831;
+  font-weight: bold;
+  border:2px double #470063;
+  border-radius: 5px;
+  background-color:#4b8f8c;
+  width: 300px;
+  padding: .75rem .95rem;
+  font-size: 1rem;
+}
+.customerInfo, .ingredients{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  border: 2px double #470063;
+}
+
+.ingredients, #orderInfoLabel, #customer{
+  color:#470063;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px 0;
+}
+.orderDetails, .customerInfo {
+  border-radius: 5px;
+}
+
+#todaysdate {
+display: flex;
+justify-content: center;
+align-items: center;
+  
+}
+.orderDetails {
+  border: 2px double #470063;
+  width: 425px;
+  min-height: 400px;
+}
+
+.orderDetails ul {
+  line-height: 30px;
+}
+
+.customerInfoLabel {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color:#470063;
+}
+
+.customerInfo label {
+  padding-bottom: 15px;
+}
+
+#orderList {
+  text-align: center;
+}
+
+#special {
+  max-width: 325px;
+}
+
+ul#orderlist {
+  margin-bottom: 10px;
+  
+}
+/*----------------ABOUT US------------------*/
+.about-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+#ourInfo {
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+#yourInfo {
+  display: flex;
+  flex-direction: column;
+  
+  padding-top: 10px;
+}
+
+#question {
+  width: 300px;
+}
+
+.carlsbadImages {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.carlsbadImages img {
+  margin-bottom: 10px;
+  width: 350px;
+}
+/*----------------FOOTER------------------*/
+
+.footer-wrapper {
+  display: flex;
+  background-color: #79afad;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.footer-wrapper .p-label {
+  font-size: 34px;
+  font-family: 'Lobster Two';
+}
+.footericons {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.footericons:hover {
+  background-color: #4b8f8c;
+}
+
+.websiteinfo {
+  text-align: center;
+  padding: 5px;
+}
+
+.websiteinfo span {
+  display: inline-block;
+  font-size: 1.125rem;  
+}
+
+.websiteinfo a {
+  text-decoration: none; 
+}
+
+.websiteinfo a:hover {
+  color:#DB2763;
+}
+
+.socialicon {
+  width: 58px;
+ padding: 0;
+ margin: 0;
+}
+
+
+span .socialicon:hover {
+  background-color: #4b8f8c;
+  
+}
+
+/*----------------THANK YOU------------------*/
+
+.thankyou-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 520px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+#close-button {
+  display:inline-block;
+  text-align: center;
+  margin: 10px;
+  width: 100px;
+  background-color: #79afad;
+  border-radius: 10px;
+  padding: 10px;
+  color:white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#close-button:hover,
+#close-button:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
