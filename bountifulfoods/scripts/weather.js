@@ -1,4 +1,3 @@
-// select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
 const currentHumidity = document.querySelector('#current-humidity');
 const weatherIcon = document.querySelector('#weather-icon');
@@ -23,8 +22,8 @@ async function apiFetch() {
   apiFetch();
 
   function displayResults(weatherData) {
-    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-    currentHumidity.innerHTML = `<strong>${weatherData.main.humidity.toFixed(0)}</strong>`;
+    currentTemp.innerHTML = `${weatherData.main.temp.toFixed(0)}`;
+    currentHumidity.innerHTML = `${weatherData.main.humidity.toFixed(0)}`;
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
     const weatherDesc = desc.split(" ");

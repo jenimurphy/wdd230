@@ -24,7 +24,7 @@ async function forecastFetch() {
     
     const dateOptions = {weekday: 'short', month: 'long', day: 'numeric'};
     weatherData.list.forEach((forecastItem, index) => {
-      if (index % 8 === 0) { // Only show 1 forecast per day
+      if (index % 8 === 0) { 
         const date = new Date(forecastItem.dt_txt);
         
         html += `<p><strong>${date.toLocaleDateString('en-US', dateOptions)}</strong></p>`;

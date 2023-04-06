@@ -63,7 +63,6 @@ function macronutrient(nutName, nut) {
         for (let property in obj) { 
             if (property == "name") { 
                 if (arrayContains(obj[property],[choice1.value, choice2.value, choice3.value])) {
-                    console.log("obj[property]==" + obj[property]);
                     switch (String(nutName)) {
                         case "carbohydrates":
                             carbs += parseFloat(obj["nutritions"][nutName]);
@@ -82,7 +81,7 @@ function macronutrient(nutName, nut) {
                             break;
                                                                     
                     }
-                    console.log('obj["nutritions"]['+nutName+']==' + obj["nutritions"][nutName] + " (total:" + nut + ")");
+                    
                 }
             }
         }
