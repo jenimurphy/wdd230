@@ -142,8 +142,12 @@ ul {
   list-style: none;
 }
 
+ol li {
+  padding: 15px;
+}
+
 #maplink {
-  color: white;
+  color: yellow;
   text-decoration: none;
 }
 
@@ -359,6 +363,13 @@ table td {
   align-items: center;
 }
 
+.socialMediaFooter {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+
 .socialIconCard {
   display: inline-flex;
   justify-content: center;
@@ -493,6 +504,13 @@ ul#orderlist {
   padding: 5px;
 }
 
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  
+}
+
 #ourInfo {
   line-height: 25px;
   margin-bottom: 20px;
@@ -500,8 +518,7 @@ ul#orderlist {
 
 #yourInfo {
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column; 
   padding-top: 10px;
 }
 
@@ -525,7 +542,7 @@ ul#orderlist {
 
 .footer-wrapper {
   display: flex;
-  background-color: #79afad;
+  background-color: #97d0ce;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -538,7 +555,7 @@ ul#orderlist {
 .footericons {
   display: flex;
   flex-direction: row;
-  margin: 10px;
+  
 }
 
 .footericons:hover {
@@ -564,14 +581,15 @@ ul#orderlist {
 }
 
 .socialicon {
-  width: 58px;
+ width: 48px;
+ height: 48px;
  padding: 0;
- margin: 0;
+ margin: 10px;
 }
 
 
 span .socialicon:hover {
-  background-color: #4b8f8c;
+  background-color: white;
   
 }
 
@@ -579,9 +597,7 @@ span .socialicon:hover {
 
 .thankyou-content {
   background-color: #fefefe;
-  margin: auto;
-  padding: 520px;
-  border: 1px solid #888;
+  padding: 20px;
   width: 80%;
 }
 
